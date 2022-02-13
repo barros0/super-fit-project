@@ -1,0 +1,70 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: Antes.ai
+Color Mode: RGB color
+Color Profile: sRGB IEC61966-2.1
+Ruler Units: pixels
+Artboard Dimensions: 1366 px x 1451,953 px
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+Montserrat Medium Italic (TrueType)
+Montserrat Light (TrueType)
+Montserrat Regular (TrueType)
+Montserrat Medium (TrueType)
+Myriad Pro (OTF)
+Montserrat Bold (TrueType)
+Montserrat SemiBold (TrueType)
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+
+C:\Users\André Sousa\Desktop\IPL\Superfit\img\antesedepois\capa2.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3016K, 1440 by 715 pixels
+Dimensions: 1379,214 by 684,818 points 
+Resolution: 75,173 by 75,173 pixels per inch
+
+
+C:\Users\André Sousa\Desktop\IPL\Superfit\img\antesedepois\transform3.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 5859K, 2000 by 1000 pixels
+Dimensions: 1040,343 by 520,172 points 
+Resolution: 138,416 by 138,416 pixels per inch
+
+
+C:\Users\André Sousa\Desktop\IPL\Superfit\img\antesedepois\transform3.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 5859K, 2000 by 1000 pixels
+Dimensions: 1020,247 by 510,124 points 
+Resolution: 141,142 by 141,142 pixels per inch
