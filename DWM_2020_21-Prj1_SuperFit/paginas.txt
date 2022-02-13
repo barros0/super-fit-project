@@ -1,0 +1,37 @@
+2211716 Ana Sobrinho
+	consultas.html
+	equipa.html
+	imc.html
+	precos.html
+
+2211695 - André Sousa
+	franchising.html
+	espacos.html
+	inscrever.html
+	loja.html
+	transformacoes.html
+
+2211726 - Beatriz Gameiro
+	Aplicação.html
+	BenefíciosdoDesporto.html
+	Clubes.html
+	FQAS.html
+	MedidasdeCovid.html
+
+2211737 João Barros
+	contactos.html
+	eventos.html
+	index.html
+	login.html
+	lesoes.html
+
+2211713 - João Duarte
+	modalidades.html
+	patrocinadores.html
+	recrutamento.html
+	sobre.html
+
+Todos:
+	jogo.html
+	footer.html
+	header.html
