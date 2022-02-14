@@ -12,11 +12,11 @@
 	transformacoes.html
 
 2211726 - Beatriz Gameiro
-	Aplicação.html
-	BenefíciosdoDesporto.html
-	Clubes.html
-	FQAS.html
-	MedidasdeCovid.html
+	app.html
+	beneficiosd.html
+	clubes.html
+	faqs.html
+	medidasc.html
 
 2211737 João Barros
 	contactos.html
