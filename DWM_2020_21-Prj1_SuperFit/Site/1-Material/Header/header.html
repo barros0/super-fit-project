@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-wrap">
+            <div class="logo-container"><img src="img/logo.svg" alt="logo"></div>
+            <div class="menu">
+                <a href="#saude">Home</a>
+                <a href="#saude">Sobre</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Saúde</button>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>               
+                  <a href="#precos">Preços</a>
+                <a href="#ajuda">Ajuda</a>
+            </div>
+            <div class="menu-direito">
+                <div class="login-wrapper">
+                    <a class="login" href="#saude">Login</a>
+                    <a class="inscreve " href="#saude">Inscreve-te</a>
+                </div>
+                <div class="menu-hamburguer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="submenu-wrap" id="submenu">
+                <div class="submenu-conteudo">
+                    <div class="submenu">
+                        <a href="#saude">Eventos</a>
+                        <a href="#saude">Espaços</a>
+                        <a href="#saude">Modalidades</a>
+                        <a href="#about">Aulas</a>
+                        <a href="#login">Treino em Casa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="js/header.js"></script>
+</body>
+
+</html>
