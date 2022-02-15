@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+/*-----------------------------------IMG--------------------------------*/
+.main-image{
+  position: initial;
+  background-image: 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
+  url("../img/beneficiosd/gym.png");
+  background-size: cover;
+  height: 500px;
+  overflow: hidden;
+  width: 100%;
+}
+.conteudo{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50% );
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.conteudo h1{
+  margin: 0;
+  font-size: 70px;
+  text-align: center;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .conteudo h1 {
+    font-size: 35px;
+  }
+  .main-image{
+    height: 300px
+  }
+  .conteudo{
+    top: 35%;
+  }
+
+}
+
+/*-----------------------------------IMG--------------------------------*/
+section {
+  padding: 100px 160px 100px 160px;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row .col50 {
+  position: relative;
+  width: 45%;
+}
+
+.titleText {
+  color: #111;
+  font-size: 36px;
+  font-weight: bold;
+}
+.titleText2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.col50 p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgb(59, 59, 59);
+}
+
+.row .col50 .imgBx {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+}
+
+.row .col50 .imgBx img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+}
+.vantagens{
+
+  background-color:#333;
+}
+.col50 li{
+  margin-left: 45px;
+  font-size: 16px;
+  line-height: 35px;
+  color: #fff;
+}
+
+@media(max-width:991px) {
+  section {
+      padding: 20px;
+  }
+
+  .row {
+      flex-direction: column;
+  }
+  #row{
+    flex-direction: column-reverse;
+  }
+
+  .row .col50 {
+      position: relative;
+      width: 100%;
+  }
+
+  .row .col50 .imgBx {
+      height: 300px;
+      margin-top: 20px;
+  }
+  .col50 li{
+    font-size: 13px;
+    line-height: 38px;
+    margin-left: 15px;
+  }
+  .titleText{
+    font-size: 20px; 
+    margin-top: 20px;
+  }
+  .titleText2{
+    font-size: 20px; 
+    margin-top: 20px;
+  }
+  .col50 p{
+    font-size: 13px; 
+  }
+}
