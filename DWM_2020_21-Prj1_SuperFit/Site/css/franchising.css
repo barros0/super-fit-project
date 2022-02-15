@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.titulo {
+    background: #fff;
+    color: #fff;
+    box-shadow: 10px 10px 20px rgb(0 0 0 / 40%);
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -5%;
+    background-image: url("../img/espacos/imagem1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.titulo h1 {
+    text-transform: uppercase;
+}
+
+.texto-wrap {
+    background: #00000091;
+    width: 100%;
+    height: 100%;
+    text-align: start;
+
+}
+
+.boxwrap {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 100%;
+    justify-content: center;
+
+}
+
+.texto-tit {
+    padding: 15px;
+    text-align: center;
+    justify-content: flex-start;
+    font-size: larger;
+}
+
+.texto-subtit {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.caixas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro {
+    margin: 30px;
+    width: 20%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgb(0 0 0 / 40%);
+}
+
+.caixas i {
+    margin: 10px;
+    font-size: 35px;
+    height: 40px;
+    color: #fff;
+    display: flex;
+    width: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    background-color: #FE2D2F;
+    justify-content: center;
+     align-items: center;
+}
+
+.centro h1 {
+    padding: 10px;
+}
+
+.text {
+    text-align: center;
+    padding: 20px;
+}
+
+.titcaixaesq {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 20px;
+}
+
+.esquerda p {
+    padding: 10px;
+    text-align: end;
+}
+
+.esquerda, .direita {
+    background: #fff;
+    width: 25%;
+    height: 200px;
+    box-shadow: 10px 10px 20px rgb(0 0 0 / 40%);
+}
+
+.titcaixadir {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
+
+.direita p {
+    padding: 10px;
+}
+
+.razoesbox {
+    background-image: url(../img/memoria/capa2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.razoesbox h1 {
+    color: white;
+    font-size: 40px;
+    padding: 50px;
+    text-align: center;
+}
+
+.razoes {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.caixasraz {
+    display: flex;
+    color: white;
+    background-color: #282828;
+    padding: 20px;
+    margin: 10px;
+    height: 30px;
+    box-shadow: 10px 10px 20px rgb(0 0 0 / 40%);
+    align-items: center;
+    transition: all 1s;
+}
+
+.caixasraz:hover {
+    transform: scale(1.05);
+    transition: all 1s;
+
+}
+
+.razoesdireita, .razoesesquerda {
+    width: 30%;
+}
+
+.caixa-icone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-icone i {
+    font-size: 50px;
+    color: #FE2D2F;
+}
+
+.caixa-icone p {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.valores {
+    padding: 20px;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.valores img {
+    width: 100%;
+    height: 100%;
+}
+
+.valores-esq {
+    display: flex;
+    margin: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valores-esq h1 {
+    margin: 10px;
+}
+
+.valores-dir {
+    width: 40%;
+}
+
+/*nome formulario*/
+
+.inputs_nome {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+
+}
+
+.inputs_nome input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.inputs_nome label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/*sobrenome formulario*/
+
+.inputs_sobrenome {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+
+}
+
+.inputs_sobrenome input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.inputs_sobrenome label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.linha-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*telefone*/
+.inputs_telefone {
+    width: auto;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.inputs_telefone input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.inputs_telefone label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/*botao termos e condicoes*/
+.termos-box{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        float: left;
+        font-size: 14px;
+        text-align: justify;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 10px;
+        
+}
+
+.termos-box a{
+    text-decoration: none;
+    color: #ff0000;
+}
+
+.textotermos {
+	display: inline;
+  vertical-align: middle;
+
+}
+
+.centro{
+  text-align: center;
+}
+
+.termos {
+	display: none;
+}
+
+.termos + .textotermos {
+	background-color: #fff;
+	border: 1px solid #cacece;
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.termos:checked + .textotermos {
+	background-color: #fff;
+	border: 1px solid #adb8c0;
+	color: #99a1a7;
+}
+
+.termos:checked + .textotermos:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #ff0000;
+}
+
+/*email*/
+.inputs_email {
+    width: auto;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.inputs_email input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.inputs_email label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.esquerda .select {
+    width: auto;
+    margin: 30px 30px;
+    border-bottom: 2px solid #adadad;
+}
+
+.esquerda select {
+    border: 0;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.textarea {
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;    
+    border-bottom: 2px solid #adadad;
+}
+
+textarea {
+    border: 0;
+    width: 100%;
+    resize: none;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    overflow: hidden;
+    border-color: #adadad;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 80%;
+    justify-content: center;
+}
+
+.inputbox {
+    display: flex;
+    justify-content: end;
+    width: auto;
+    margin: 0 30px 0 30px;
+}
+
+.inputbox input {
+    width: 15%;
+    color: white;
+    background-color: #FE2D2F;
+}
+
+/*classe do texto de erro*/
+.erro{
+    color: red;
+    font-size: 11px;
+    float: left;
+    position: absolute;
+    margin-top: 5px;
+  
+  }
+
+/*efeito de focus subir a caixa*/
+
+.inputs_nome input:focus~label,
+.inputs_nome input:valid~label,
+.inputs_sobrenome input:focus~label,
+.inputs_sobrenome input:valid~label,
+.inputs_telefone input:focus~label,
+.inputs_telefone input:valid~label,
+.inputs_email input:focus~label,
+.inputs_email input:valid~label,
+.inputs_reg input:focus~label,
+.inputs_reg input:valid~label {
+    top: -5px;
+    color: #bdbcbc;
+}
+
+input[type="submit"] {
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 30%;
+    height: 40px;
+    font-size: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.897);
+}
+
+.form {
+    margin-bottom: 3%;
+    margin-top: 3%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs_reg input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.inputs_reg {
+    width: auto;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.inputs_reg label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.titcaixacentro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width:1300px) {
+    .esquerda, .direita {
+        width: 30%;
+    }
+
+}
+
+@media (max-width:950px) {
+    .direita, .esquerda, .centro {
+        margin: 30px;
+        width: 30%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 10px 10px 20px rgb(0 0 0 / 40%);
+        height: 300px;
+    }
+
+    .valores {
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    .icones {
+        flex-direction: column;
+    }
+
+    .valores img {
+        display: none;
+    }
+
+    .titcaixadir, .titcaixaesq {
+        flex-direction: column;
+    }
+
+    .esquerda p, .text, .direita p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .centro h1 {
+        padding: 0;
+    }
+
+    .titcaixacentro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+}
+
+@media (max-width:800px) {
+    .direita, .esquerda, .centro {
+        margin: 10px;
+    }
+
+    .razoesdireita, .razoesesquerda {
+        width: 40%;
+    }
+}
+
+@media (max-width:650px) {
+    .caixas {
+        flex-direction: column;
+    }
+
+    .direita, .esquerda, .centro {
+        width: 70%;
+    }
+
+    .caixasraz {
+        margin: 2px;
+    }
+
+    .form h1 {
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    
+}
