@@ -245,6 +245,13 @@ html {
   float: left;
 }
 
+.verplanos a{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+
+}
+
 .verplanos:hover {
 cursor: pointer;
 }

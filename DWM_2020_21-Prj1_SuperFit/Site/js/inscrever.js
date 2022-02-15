@@ -446,22 +446,3 @@ function anterior() {
   }
 
 }
-
-/*funcao abre e mostra a caixa com os planos na etapa 3 */
-function planos() {
-
-  let planos = document.getElementById("planos");
-
-  let x = window.getComputedStyle(planos).getPropertyValue('display');
-
-  if (x === "none") {
-
-    planos.style.display = "block";
-
-  } else {
-
-    planos.style.display = "none";
-
-  }
-
-}
