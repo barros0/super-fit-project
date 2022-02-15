@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.897);
+}
+
+.events-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.left-date, .right-date, .more-btn {
+    padding: 8px;
+    margin: 20px;
+    width: 127px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: #FE2D2F;
+    justify-content: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.left-date:hover, .right-date:hover, .more-btn:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.right-date:hover {
+    color: white;
+    background-color: #FE2D2F;
+}
+
+.right-date {
+    color: black;
+    background-color: white;
+}
+
+#eventos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caixa {
+    margin: 20px;
+    display: flex;
+    position: relative;
+    width: 70%;
+    height: 300px;
+    background-color: white;
+}
+
+.img {
+    width: 80%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.first {
+    background-image: url("../img/eventos_img/pexels-andrea-piacquadio-868757.jpg");
+}
+
+.second {
+    background-image: url("../img/eventos_img/pexels-mabel-amber-128202.jpg");
+}
+
+.third {
+    background-image: url("../img/eventos_img/pexels-freestocksorg-396133.jpg");
+}
+
+.fourth {
+    background-image: url("../img/eventos_img/pexels-pixabay-262524.jpg");
+}
+
+.texto-title {
+    padding: 30px 40px 30px 40px;
+}
+
+.textocaixa {
+    width: 100%;
+}
+
+.textocaixa p {
+    padding: 0px 20px 20px 40px;
+}
+
+.btn-caixa {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    background-color: #FE2D2F;
+    width: 22%;
+    clip-path: polygon(0 0, 67% 0, 100% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-inscrever {
+    color: white;
+    font-weight: bold;
+    width: 70%;
+}
+
+.btn-inscrever span.inscrever {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn-inscrever span {
+    font-size: 17px;
+}
+
+#hidden-card {
+    display: none;
+}
+
+#alert {
+    display: none;
+}
+
+.alert {
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: #00000078;
+}
+
+.alertbox {
+    margin-top: 7%;
+    margin-right: 2%;
+    position: absolute;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+#proximos-eventos {
+    display: none;
+}
+
+.proximos-eventos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn-noti {
+    padding: 8px;
+    margin: 20px;
+    width: 127px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: #FE2D2F;
+    justify-content: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-noti:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+    box-shadow: 0 0 5px #FE2D2F, 0 0 10px #FE2D2F, 0 0 20px #FE2D2F;
+}
+
+#noti {
+    display: none;
+}
+
+.prximoone {
+    height: 300px;
+    background-image: url(../img/eventos_img/pexels-li-sun-2294361.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.prximotwo {
+    height: 300px;
+    background-image: url(../img/eventos_img/pexels-cottonbro-5319371.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.caixaprox {
+    margin: 20px;
+    height: 600px;
+    background-color: white;
+    width: 30%;
+}
+
+.textoprox {
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+#datacountdown1, #datacountdown2 {
+    font-size: 30px;
+}
+
+.banner {
+    background: #fff;
+    color: #fff;
+    box-shadow: 10px 10px 20px rgb(0 0 0 / 40%);
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3%;
+    background-image: url("../img/eventos_img/pexels-victor-freitas-949134.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+.gradiente {
+    background: #00000091;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.textobanner {
+    text-align: center;
+}
+
+.titbanner {
+    font-weight: 400;
+    padding: 15px;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.textobanner p {
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+}
+
+@media (max-width:1100px) {
+    .btn-inscrever {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .caixa {
+        height: 700px;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .img {
+        height: 400px;
+        width: 100%;
+    }
+
+    .btn-caixa {
+        width: 100%;
+        clip-path: none;
+    }
+
+    .alertbox {
+        margin-top: 9%;
+    }
+
+    .proximos-eventos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .caixaprox {
+        width: 60%;
+    }
+}
+
+@media (max-width:770px) {
+    .alertbox {
+        margin-top: 12%;
+    }
+
+}
+
+@media (max-width:550px) {
+    .caixa {
+        text-align: center;
+        width: 90%;
+    }
+
+    .caixaprox {
+        width: 70%;
+    }
+
+    .alertbox {
+        margin-right: 0;
+        margin-top: 19%;
+    }
+
+    .img {
+        height: 300px;
+    }
+}

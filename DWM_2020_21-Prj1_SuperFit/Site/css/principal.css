@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.897);
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(118deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.727) 100%), url(../img/index_img/pexels-william-choquette-1954524.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.heroheading {
+    font-size: 3rem;
+}
+
+.herobody {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+#scrollbtn {
+    font-size: 30px;
+    bottom: 4.45%;
+    position: absolute;
+}
+
+.herobtn {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.herobtn:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.container a {
+    color: white;
+}
+
+.container {
+    width: 100%;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container2 img {
+    margin: 2rem;
+    padding: 2rem;
+    width: 500px;
+}
+
+.container2text {
+    margin: 2rem 0rem 2rem 0;
+    padding: 2rem 0rem 2rem 0;
+}
+
+.container2text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 30%;
+}
+
+.container2text h1 {
+    font-size: 2.5rem;
+}
+
+.container2text p.ctxt {
+    margin-top: 50px;
+}
+
+.container2text .btnadere {
+    margin-top: 50px;
+}
+
+.btnadere {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 500;
+    color: #FE2D2F;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    padding: 12px 30px 12px 30px;
+}
+
+.btnadere:hover {
+    background-color: #FE2D2F;
+    color: rgba(0, 0, 0, 0.897);
+}
+
+.pricetxt {
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.price {
+    color: #FE2D2F;
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.price span {
+    font-size: 35px;
+}
+
+.cartaseventos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cartas {
+    background: white;
+    color: black;
+    width: 270px;
+    margin: 30px;
+    transition: all 1s ease;
+}
+
+.cartaimg {
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.carta1 {
+    background-image: url("../img/index_img/pexels-andrea-piacquadio-868757.jpg");
+}
+
+.carta2 {
+    background-image: url("../img/index_img/pexels-mabel-amber-128202.jpg");
+}
+
+.carta3 {
+    background-image: url("../img/index_img/pexels-freestocksorg-396133.jpg");
+}
+
+.btnins {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border-width: 2px;
+    font-weight: 500;
+    color: #FE2D2F;
+    border-style: solid;
+    margin: 20px 50px;
+    padding: 5px 0px 5px 0px;
+}
+
+.btnins:hover {
+    transition: ease-in-out 0.5s;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+}
+
+.cartas h2, .cartas p {
+    padding: 10px;
+}
+
+.cartas p {
+    height: 173.6px;
+}
+
+.cartas:hover {
+    background-color: #FE2D2F;
+    color: white;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+.cartas:hover .btnins {
+    background-color: #FE2D2F;
+    color: white;
+}
+
+.titevents, .titlocal {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    margin: 45px;
+    margin-top: 0;
+}
+
+iframe {
+    margin: 0 40px 0 40px;
+}
+
+.local {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.localbtn {
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.localbtn:hover {
+    background-color: white;
+    color: black;
+}
+
+a.goupbtn {
+    width: 1%;
+    display: none;
+    position: fixed;
+    color: white;
+    font-size: 40px;
+    z-index: 99;
+    margin: 20px;
+    bottom: 0;
+}
+
+#alert {
+    display: none;
+}
+
+.alert {
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: #00000078;
+}
+
+.alertbox {
+    margin-top: 7%;
+    margin-right: 2%;
+    position: absolute;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.clube {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 200px;
+    background-image: url(../img/index_img/pexels-victor-freitas-841130.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tituloclube {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+a.clubebtn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    margin: 10px;
+    border-style: solid;
+    padding: 10px;
+    border-width: 2px;
+}
+
+a.clubebtn:hover {
+    border-color: white;
+    background-color: #fff;
+    color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .menu {
+        display: none;
+    }
+
+    .login-wrapper {
+        display: none;
+
+    }
+
+    .menu-direito {
+        width: 0;
+
+    }
+
+    .logo-container {
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 1223px) {
+    .alertbox {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 986px) {
+    .btnadere {
+        padding: 12px 7px 12px 7px;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container2text {
+        margin: 0%;
+        width: 90%;
+    }
+
+    .container2 img {
+        margin: 0;
+        width: 400px;
+    }
+
+    iframe {
+        width: 400px;
+        height: 400px;
+
+    }
+}
+
+@media (max-width: 775px) {
+    .alertbox {
+        margin-top: 14%;
+    }
+}
+
+@media (max-width: 591px) {
+    .alertbox {
+        margin-top: 18%;
+    }
+}
+
+@media (max-width: 467px) {
+    .alertbox {
+        margin-top: 20%;
+    }
+
+    iframe {
+        width: 300px;
+        height: 300px;
+    }
+
+    .container2 img {
+        width: 374px;
+    }
+
+    .alertbox {
+        margin-right: 0;
+    }
+}

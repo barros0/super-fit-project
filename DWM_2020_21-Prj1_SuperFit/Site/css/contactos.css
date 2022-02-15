@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.esquerda {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.direita {
+    background-image: url(../img/contactos_img/logocinza.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.897);
+}
+
+.infobox h2 {
+    color: white;
+    padding: 30px;
+}
+
+.info {
+    color: #ffffff63;
+    padding: 30px;
+}
+
+.info_wrap {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info_wrap i {
+    padding: 10px;
+    font-size: 50px;
+}
+
+.info_wrap p {
+    color: white
+}
+
+.infobox .select {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.infobox select {
+    width: 80%;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+    margin: 20px;
+    padding-left: 10px;
+}
+
+select:focus {
+    outline: none;
+}
+
+.social {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.social i {
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff63;
+    color: #0000008c;
+    border-radius: 100px;
+    font-size: 30px;
+}
+
+.box {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box i {
+    font-size: 30px;
+}
+
+.inputs_nome {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 30px;
+}
+
+.inputs_nome input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.inputs_nome label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.primeira {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inputs_email {
+    width: auto;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 30px;
+}
+
+.inputs_email input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.inputs_email label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.esquerda .select {
+    width: auto;
+    margin: 30px 30px;
+    border-bottom: 2px solid #adadad;
+}
+
+.esquerda select {
+    border: 0;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.textarea {
+    width: auto;
+    margin: 30px 30px;
+    border-bottom: 2px solid #adadad;
+}
+
+textarea {
+    border: 0;
+    width: 100%;
+    resize: none;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    overflow: hidden;
+    border-color: #adadad;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: center;
+}
+
+.inputbox {
+    display: flex;
+    justify-content: end;
+    width: auto;
+    margin: 0 30px 0 30px;
+}
+
+.inputbox input {
+    width: 15%;
+    color: white;
+    background-color: #FE2D2F;
+}
+
+.inputs_nome input:focus~label,
+.inputs_nome input:valid~label,
+.inputs_email input:focus~label,
+.inputs_email input:valid~label {
+    top: -5px;
+    color: #FE2D2F;
+}
+
+input[type="submit"] {
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 30%;
+    height: 40px;
+    font-size: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.897);
+}
+
+.bxl-facebook-square:hover {
+    background-color: #FE2D2F;
+    color: #adadad;
+}
+
+.bxl-instagram:hover {
+    background-color: #FE2D2F;
+    color: #adadad;
+}
+
+.bxl-twitter:hover {
+    background-color: #FE2D2F;
+    color: #adadad;
+}
+
+@media (max-width:700px) {
+    .inputs_nome {
+        margin: 0;
+    }
+
+    #prim {
+        margin: 30px 20px 30px 30px;
+    }
+
+    #ult {
+        margin: 30px 30px 30px 20px;
+    }
+}
+
+@media (max-width:672px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .direita {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
