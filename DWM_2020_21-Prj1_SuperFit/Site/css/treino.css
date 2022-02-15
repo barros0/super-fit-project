@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    min-height:100vh;
+    width:100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
+    background-color: rgb(216,216,216);
+    }
+  
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+
+/*===============================================================================================================================================================================================================*/
+/*HOME-BANNER*/
+
+.banner-home{
+  box-shadow: 10px 10px 25px rgb(0 0 0 / 40%);
+  width: 100%;
+  background-image: url('..///img/treino/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5%;
+  z-index: 1;
+}
+
+
+
+
+
+#layer-home{
+    height: 500px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.589);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+
+/*===============================================================================================================================================================================================================*/
+/*PAGINA - Treino*/
+
+.treino{
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(216,216,216);
+}
+
+.titulo-treino{
+  font-size: 45px;
+  margin-left: 10%;
+  margin-top: 0.5%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  color:black;
+  margin-bottom: 4%;
+  z-index: 99;
+}
+
+
+.treino1{
+  max-width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 45%;
+  
+}
+
+
+
+
+/*==============================================================================================================================================================================================================*/
+/*SECCAO TREINOS */
+
+h2{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 80px;
+  letter-spacing: 3px;
+  color: white;
+}
+
+hr{
+  margin: 120px;
+  background-color: black;
+  margin-bottom: 3%;
+}
+
+.texto-treino{
+  width: 100%;
+  padding: 30px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.seccao-texto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 90%;
+}
+
+select {
+  outline: none;
+}
+
+select {
+  height: 45px;
+  text-align: center;
+  width: 30%;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding-left: 10px;
+  background-color: transparent;
+  border: 2px solid;
+  border-color: white;
+}
+
+option{
+  color: black;
+}
+
+
+#treino-medio{
+  display: none;
+}
+
+#treino-dificil{
+  display: none;
+}
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+/*CAIXAS - treino*/
+
+
+
+
+.caixas {
+  width: 400px;
+  height: 300px;
+  display: block;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3%;
+  box-shadow: 0 15px 20px 0 #282828;
+  background-color: #282828f3;
+}
+
+.caixas:hover {
+  transform: scale(1.05);
+  transition: 1s;
+  cursor: pointer;
+
+}
+
+
+.caixa-texto {
+  height: 120px;
+  border-radius: 100%;
+  width: 120px;
+  position: absolute;
+  background-color: #ff0000f3;
+  z-index: 3;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: -75%;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+
+.caixa-texto:hover {
+  background-color: white;
+  border-color: white;
+  box-shadow: 0 1px 5px 0 white;
+  color:black;
+  transition: .5s ease;
+  overflow: hidden;
+
+}
+
+.texto{
+  width: 100%;
+  padding: 5px;
+  color: #fff;
+}
+
+
+.caixa-lermais {
+  height: 40px;
+  width: 120px;
+  position: absolute;
+  z-index: 5;
+  margin-top: 55%;
+  border: 3px solid;
+  border-color: #ff0000;
+  box-shadow: 0 2px 4px 0 #ff0000;
+  color: #ff0000;
+  background-color: transparent;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  display: flex;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.caixa-lermais:hover {
+  background-color: white;
+  border-color: white;
+  box-shadow: 0 1px 1px 0 white;
+  color:black;
+  transition: .5s ease;
+  overflow: hidden;
+  
+
+}
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+/*IMAGENS - treino*/
+
+
+
+
+.treino2{
+  max-width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 47%;
+  margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+/*FOOTER*/
+
+
+.footer-top {
+  background-color: #282828;
+  display: flex;
+  color: #000;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 20px 5% 20px 5%;
+
+}
+
+.foottop-caixa {
+  display: flex;
+  width: 25%;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.foottop-caixa-news {
+  display: flex;
+  width: 25%;
+  align-items: center;
+}
+
+/*links*/
+
+.footer-links {
+  font-size: 15px;
+  font-weight: 200;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+  font-size: 13px;
+}
+
+.footer-links a:hover {
+  color: #f00;
+}
+
+
+.footer-links a:before {
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/*newsletter*/
+
+.newsletter {
+  display: block;
+  text-align: center;
+
+}
+
+.caixa-mail {
+  width: 100%;
+  padding: 8px 10px 9px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+  height: 35px;
+
+}
+
+.subscreve {
+  padding: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+  font-weight: bold;
+}
+
+.subscreve:hover {
+  padding: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/**copyright*/
+
+.footer-bottom {
+  background-color: #000;
+  display: flex;
+  color: #a1a1a1;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 20px 5% 20px 5%;
+
+}
+
+.footer-copyright {
+  width: 75%;
+  display: flex;
+  align-items: center;
+}
+
+/**icones sociais*/
+
+.footer-bottom .footer-redes a {
+  display: flex;
+  text-decoration: none;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  margin-right: 5px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all .25s;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bottom .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-bottom .footer-redes {
+  display: flex;
+  width: 25%;
+  justify-content: flex-end;
+}
+
+.footer-bottom .footer-redes a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-bottom p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.foottop-caixa-news p {
+  font-size: 13px;
+  color: white;
+}
+
+
+
+
+
+/*=======================================================================================================================================================================================================*/
+/*RESPONSIVIDADE*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/* RESPONSIVO - 1110px */
+
+@media (max-width: 1110px) { 
+
+  .caixas {
+    width: 290px;
+    height: 250px;
+}
+
+.caixa-texto {
+  height: 100px;
+  width: 100px;
+  margin-top: -90%;
+  font-size: 40px;
+}
+
+.caixa-lermais {
+  height: 35px;
+  width: 100px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 16px;
+}
+
+select {
+
+  margin-bottom: -10%;
+
+}
+
+hr {
+  margin: 160px;
+  margin-bottom: 10%;
+}
+
+.banner-home {
+  margin-bottom: 7%;
+
+}
+
+.texto {
+  padding: 20px;
+
+}
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/* RESPONSIVO - 775px */
+
+@media (max-width: 775px) { 
+
+  .caixas {
+    width: 290px;
+    height: 200px;
+}
+
+.caixa-texto {
+  height: 80px;
+  width: 80px;
+  margin-top: -95%;
+  font-size: 30px;
+}
+.caixa-lermais {
+  height: 25px;
+  width: 85px;
+  font-size: 14px;
+  margin-top: 65%;
+}
+
+select {
+
+  margin-bottom: -10%;
+
+}
+
+hr {
+  margin: 160px;
+  margin-bottom: 10%;
+}
+
+.banner-home {
+  margin-bottom: 10%;
+}
+
+.texto {
+  padding: 20px;
+  font-size: 13px;
+
+
+}
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/* RESPONSIVO - 630px */
+
+@media (max-width: 630px) { 
+
+  .treino1 {
+    flex-direction: column;
+}
+
+.treino2 {
+  flex-direction: column;
+}
+
+.caixas {
+  width: 330px;
+  height: 280px;
+  margin: 8%;
+}
+
+.caixa-texto {
+  height: 120px;
+  width: 120px;
+  margin-top: -85%;
+  font-size: 40px;
+}
+
+.caixa-lermais {
+  height: 40px;
+  width: 100px;
+  font-size: 18px;
+  margin-top: 50%;
+}
+
+.texto {
+  padding: 20px;
+  font-size: 15px;
+}
+
+
+
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/* RESPONSIVO - 450px */
+
+@media (max-width: 450px) { 
+  h2 {
+    font-size: 60px;
+}
+
+.texto-treino {
+  padding: 42px;
+}
+
+.banner-home {
+  margin-bottom: 15%;
+}
+
+hr {
+  margin: 75px;
+  margin-bottom: 25%;
+}
+
+.caixas {
+  width: 280px;
+  height: 250px;
+}
+
+.caixa-texto {
+  height: 100px;
+  width: 100px;
+  margin-top: -85%;
+  font-size: 35px;
+}
+
+.caixa-lermais {
+  height: 35px;
+  width: 90px;
+  font-size: 15px;
+  margin-top: 55%;
+}
+
+select {
+  width: 50%;
+}
+
+
+
+}

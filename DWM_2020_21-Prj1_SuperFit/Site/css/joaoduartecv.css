@@ -1,0 +1,654 @@
+html{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  min-height:100vh;
+  width:100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  position: relative;
+  
+  }
+
+.imagem-home{
+  background: url("../img/fundo-curriculo.jpg") no-repeat center/cover;
+  width: 100%;
+  height:100vh;
+ 
+  
+}
+
+.container-seta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container-foto{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.container-logo{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.container-texto{
+
+  text-align: center;
+}
+
+.container-barras{
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+
+.fundo-dados{
+  height: 100vh;
+  width: 100%;
+  background: #5f4c35d5;
+  
+  
+}
+
+.fundo-graduado{
+  background: #533c20d5;
+}
+
+
+.fundo-experiencia{
+  background: #634622d5;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.fundo-aptidoes{
+  background: #5a3911d5;
+  height: 100vh;
+  width: 100%;
+  
+}
+
+
+
+.fundo-hobbies{
+  background: #3a2001d5;
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+.fundo-linguas{
+  background: #532f02d5;
+  height: 100vh;
+  width: 100%;
+}
+
+  .ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-width: 100%;
+    border-radius: 10%;
+    border-color: rgb(75, 75, 75);
+    
+  }
+
+  * {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+  }
+   
+
+
+h1
+{
+  font-family: 'Bebas Neue', cursive;
+ font-size: 50px;
+ color: rgb(48, 48, 48);
+ margin-left: 2%;
+
+}
+
+h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 55px;
+  color: rgb(48, 48, 48);
+  margin-top: 3%;
+  font-style: oblique;
+  font-variant: small-caps;
+}
+
+
+h3 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 55px;
+  color: rgb(48, 48, 48);
+  margin-top: -5.5%;
+  font-style: oblique;
+  font-variant: small-caps;
+}
+
+h4 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 55px;
+  color: rgb(48, 48, 48);
+  margin-top: -2%;
+  font-style: oblique;
+  font-variant: small-caps;
+}
+
+
+h5 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 55px;
+  color: rgb(48, 48, 48);
+  margin-top: -5%;
+  font-style: oblique;
+  font-variant: small-caps;
+}
+
+h6 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 55px;
+  color: rgb(48, 48, 48);
+  margin-top: -5%;
+  font-style: oblique;
+  font-variant: small-caps;
+}
+
+
+
+
+.titulo-hobbies{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 55px;
+  color: rgb(48, 48, 48);
+  margin-top: -3%;
+  font-style: oblique;
+  font-variant: small-caps;
+}
+
+.imagemperfil {
+
+  width: 250px;
+  margin-top: 10%;
+  border-radius: 35px;
+  
+}
+
+.nome-introducao{
+  border: solid #ffff;
+  width: 50%;
+  margin-left: 1%;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 115%, 85% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 115%, 85% 0);
+  background-color: #fff;
+  opacity: 90%;
+  margin-top: 2%;
+}
+
+.seta-logo {
+
+  width: 60px;
+  margin-top: 80%;
+
+}
+
+
+.seta-aptidoes {
+
+  width: 60px;
+  margin-top: 100%;
+}
+
+.seta-linguas {
+
+  width: 60px;
+  margin-top: 100%;
+}
+
+.seta-dados {
+
+  width: 60px;
+  margin-top: 120%;
+}
+
+.seta-graduado {
+
+  width: 60px;
+  margin-top: 50%;
+}
+
+.seta-experiencia {
+
+  width: 60px;
+  margin-top: 100%;
+}
+
+
+
+.link-logo {
+
+  width: 55px;
+  margin-top: 0%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.seta2-logo {
+
+  width: 60px;
+  margin-top: 100%;
+}
+
+.graduado-logo {
+
+  width: 230px;
+  margin-top: 10%;
+}
+
+.dadospessoais-logo {
+
+  width: 230px;
+  margin-top: 4%;
+}
+
+
+
+.texto-formacao{
+
+  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  margin-top: 1.5%;
+  line-height: 1.5;
+}
+
+.texto-dadospessoais{
+
+  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  margin-top: 1%;
+  line-height: 1.5;
+}
+
+
+.experiencia-profissional-logo{
+
+  width: 270px;
+
+}
+
+.texto-experiencia-profissional{
+
+  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  margin-top: 1%;
+  line-height: 1.5;
+}
+
+.aptidoes-logo {
+
+  width: 270px;
+  margin-top: 0%;
+}
+
+
+
+
+.logo-barras{
+  margin: 7%;
+  width: 53px;
+  margin-left:  40%;
+  margin-top: 2%;
+}
+
+
+
+.pt-bandeira{
+
+  width: 70px;
+  margin-left: 62%;
+  margin-top: 5%;
+  border-radius: 35px;
+}
+
+.en-bandeira{
+
+  width: 65px;
+  margin-left: 30%;
+  margin-top: 7%;
+  border-radius: 35px;
+}
+
+.es-bandeira{
+
+  width: 65px;
+  margin-left: 62.5%;
+  margin-top: 2.6%;
+  border-radius: 35px;
+}
+
+.fr-bandeira{
+
+  width: 65px;
+  margin-left: 30%;
+  margin-top: 3%;
+  border-radius: 35px;
+}
+
+
+.texto-aptidoes{
+
+  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  margin-top: 2%;
+  line-height: 1.5;
+}
+
+
+.linguas-logo{
+
+  width: 360px;
+  margin-top: 0%;
+}
+
+.linguas-tabela {
+
+  width: 550px;
+  margin-top: 2%;
+}
+
+.hobbies-logo{
+
+  width: 360px;
+  margin-top: 3%;
+}
+
+.texto-hobbies{
+
+  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  margin-top: 1%;
+  line-height: 1.5;
+}
+
+
+
+.progress1 {
+  background: rgb(48, 48, 48);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 20px;
+  width: 300px;
+}
+
+.progress-value1 {
+  animation: load1 3s normal forwards;
+  box-shadow: 0 10px 40px -10px white;
+  border-radius: 100px;
+  background: white;
+  height: 15px;
+  width: 0;
+}
+
+@keyframes load1 {
+  0% { width: 0; }
+  100% { width: 80%; }
+}
+
+.progress2 {
+  background: rgb(48, 48, 48);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 20px;
+  width: 300px;
+  
+}
+
+.progress-value2 {
+  animation: load2 3s normal forwards;
+  box-shadow: 0 10px 40px -10px white;
+  border-radius: 100px;
+  background: white;
+  height: 15px;
+  width: 0;
+}
+
+@keyframes load2{
+  0% { width: 0; }
+  100% { width: 70%; }
+}
+
+.progress3 {
+  background: rgb(48, 48, 48);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 20px;
+  width: 300px;
+  
+}
+
+.progress-value3 {
+  animation: load3 3s normal forwards;
+  box-shadow: 0 10px 40px -10px white;
+  border-radius: 100px;
+  background: white;
+  height: 15px;
+  width: 0;
+}
+
+@keyframes load3{
+  0% { width: 0; }
+  100% { width: 45%; }
+}
+
+.progress4 {
+  background: rgb(48, 48, 48);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 20px;
+  width: 300px;
+  
+}
+
+.progress-value4 {
+  animation: load4 3s normal forwards;
+  box-shadow: 0 10px 40px -10px white;
+  border-radius: 100px;
+  background: white;
+  height: 15px;
+  width: 0;
+}
+
+@keyframes load4{
+  0% { width: 0; }
+  100% { width: 40%; }
+}
+
+.progress5 {
+  background: rgb(48, 48, 48);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 20px;
+  width: 300px;
+  
+}
+
+.progress-value5 {
+  animation: load5 3s normal forwards;
+  box-shadow: 0 10px 40px -10px white;
+  border-radius: 100px;
+  background: white;
+  height: 15px;
+  width: 0;
+}
+
+@keyframes load5{
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+
+.progress6 {
+  background: rgb(48, 48, 48);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 20px;
+  width: 300px;
+  
+}
+
+.progress-value6 {
+  animation: load6 3s normal forwards;
+  box-shadow: 0 10px 40px -10px white;
+  border-radius: 100px;
+  background: white;
+  height: 15px;
+  width: 0;
+}
+
+@keyframes load6{
+  0% { width: 0; }
+  100% { width: 70%; }
+}
+
+
+.progress7 {
+  background: rgb(48, 48, 48);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 20px;
+  width: 300px;
+  
+}
+
+.progress-value7 {
+  animation: load7 3s normal forwards;
+  box-shadow: 0 10px 40px -10px white;
+  border-radius: 100px;
+  background: white;
+  height: 15px;
+  width: 0;
+}
+
+@keyframes load7{
+  0% { width: 0; }
+  100% { width: 30%; }
+}
+
+.progress8 {
+  background: rgb(48, 48, 48);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 20px;
+  width: 300px;
+  
+}
+
+.progress-value8 {
+  animation: load8 3s normal forwards;
+  box-shadow: 0 10px 40px -10px white;
+  border-radius: 100px;
+  background: white;
+  height: 15px;
+  width: 0;
+}
+
+@keyframes load8{
+  0% { width: 0; }
+  100% { width: 30%; }
+}
+
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.7%;
+  background-color: rgba(255, 255, 255, 0.685);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: arial;
+  font-size:10px;
+  vertical-align: middle;
+  padding:10px;
+
+}
+
+
+@media (max-width: 1800px) {
+
+  h5 {
+    margin-top: -25%;
+  }
+
+  .seta-aptidoes {
+
+    width: 60px;
+    margin-top: 80%;
+  }
+}

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SuperFit | Treino em Casa</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/treino.css">
+    <link rel="stylesheet" href="../Site/1-Material/Footer/css/footer.css">
+    <link rel="stylesheet" href="../Site/1-Material/Header/css/header.css">
+    <script src="https://kit.fontawesome.com/27dd9727ef.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-wrap">
+
+            <div class="logo-container"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
+
+            <div class="menu">
+
+                <a href="#saude">Home</a>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Empresa <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="">Sobre</a>
+                        <a href="">Localização</a>
+                        <a href="">Equipa</a>
+                        <a href="">Recrutamento</a>
+                        <a href="">APP</a>
+                        <a href="">Franchising</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class=" dropdown">Saúde <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="">Calcular IMC</a>
+                        <a href="">Consultas de Nutrição</a>
+                        <a href="">Antes/Depois</a>
+                        <a href="">Benefícios do Desporto</a>
+                        <a href="">Lesões</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Preços <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="">Planos</a>
+                        <a href="">Merchandising</a>
+                        <a href="">Parceiros</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Ajuda <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="">FAQ</a>
+                        <a href="">Contactos</a>
+                        <a href="">Normas COVID-19</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-direito">
+                <div class="login-wrapper">
+                    <a class="login" href="#saude">Login</a>
+                    <a class="inscreve " href="#saude">Inscreve-te</a>
+                </div>
+
+                <div class="menu-hamburguer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="submenu" id="submenu">
+            <div class="submenumobile">
+                <div class="ins">
+                    <a href="#login">Login</a>
+                    <a href="#login">Inscreve-te</a>
+                </div>
+                <a href="#saude">Home</a>
+            </div>
+            <a href="#dadadwdwa">Jogo da Memória</a>
+            <a href="#saude">Eventos</a>
+            <a href="#saude">Espaços</a>
+            <a href="#saude">Modalidades</a>
+            <a href="#about">Aulas</a>
+            <a href="#login">Treino em Casa</a>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="empresa()">Empresa <i class="fa fa-caret-down"></i></div>
+                <div id="empresadrop" class="conteudo-dropdown-mobile">
+                    <a href="instagram.com">Sobre</a>
+                    <a href="instagram.com">Localização</a>
+                    <a href="instagram.com">Equipa</a>
+                    <a href="instagram.com">Recrutamento</a>
+                    <a href="instagram.com">APP</a>
+                    <a href="instagram.com">Franchising</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="saude()">Saúde <i class="fa fa-caret-down"></i></div>
+                <div id="saudedrop" class="conteudo-dropdown-mobile">
+                    <a href="">Calcular IMC</a>
+                    <a href="">Consultas de Nutrição</a>
+                    <a href="">Antes/Depois</a>
+                    <a href="">Benefícios do Desporto</a>
+                    <a href="">Lesões</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="precos()">Preços <i class="fa fa-caret-down"></i></div>
+                <div id="precosdrop" class="conteudo-dropdown-mobile">
+                    <a href="">Planos</a>
+                    <a href="">Merchandising</a>
+                    <a href="">Parceiros</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="ajuda()">Ajuda <i class="fa fa-caret-down"></i></div>
+                <div id="ajudadrop" class="conteudo-dropdown-mobile">
+                    <a href="">FAQ</a>
+                    <a href="">Contactos</a>
+                    <a href="">Normas COVID-19</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Treino em Casa - Pagina -->
+
+
+    
+  
+        <div class='banner-home'><div id='layer-home'>
+        <h2>Treino em Casa</h2>
+        <div class='texto-treino'>
+
+            <p>Cada Personal Trainer da SuperFit tem o know-how e a experiência necessária para definir o tipo de treino mais adequado, consoante a necessidade personalizada de cada sócio.</p>
+            <p>Neste serviço de excelência vais encontrar a solução ideal para aumentar os teus resultados de forma mais rápida e eficaz.</p>
+            <p>Assim podemos conceder-lhe acompanhamento virtual, sem ser apenas presencialmente.</p>
+
+        </div>
+
+
+        <div class="select">
+            <select onclick="tipotreino()" name="treino" id="treino">
+                <option value="1">Treino Fácil</option>
+                <option value="2">Treino Médio</option>
+                <option value="3">Treino Díficil</option>
+            </select>
+        </div>
+
+        </div></div>
+
+
+
+        <div class="seccao-texto">
+          
+
+            <div id='treino-facil'>
+            <div class="treino1">
+
+                <div class="caixas">
+                    <div class="texto">
+                    <p>6 Minutos de Corrida - 1 Serie</p>
+                    <p>15 Lat Pull Down - 3 Series - 30 Minutos de Descanso Entre Elas</p>
+                  </div>
+                    <div class="caixa-lermais">LER MAIS</div>
+                    <div class="caixa-texto">1</div>
+                </div>
+                <div class="caixas">
+                    <div class="texto">
+                        <p>6 Minutos de Corrida - 1 Serie</p>
+                        <p>15 Lat Row - 3 Series - 30 Minutos de Descanso Entre Elas</p>
+                      </div>
+                    <div class="caixa-lermais">LER MAIS</div>
+                    <div class="caixa-texto">2</div>
+                </div>
+                <div class="caixas">
+                    <div class="texto">
+                        <p>6 Minutos de Corrida - 1 Serie</p>
+                        <p>30 Cuff Rotators - 3 Series - 30 Minutos de Descanso Entre Elas</p>
+                      </div>
+                    <div class="caixa-lermais">LER MAIS</div>
+                    <div class="caixa-texto">3</div>
+                </div>
+    
+            </div>
+            <div class="treino2">
+                <div class="caixas">
+                    <div class="texto">
+                        <p>6 Minutos de Corrida - 1 Serie</p>
+                        <p>15 Cuff Rotators - 3 Series - 30 Minutos de Descanso Entre Elas</p>
+                      </div>
+                    <div class="caixa-lermais">LER MAIS</div>
+                    <div class="caixa-texto">4</div>
+                </div>
+                <div class="caixas">
+                    <div class="texto">
+                        <p>15 Lat Row - 3 Series - 30 Minutos de Descanso Entre Elas</p>
+                        <p>30 Cuff Rotators - 3 Series - 30 Minutos de Descanso Entre Elas</p>
+                      </div>
+                    <div class="caixa-lermais">LER MAIS</div>
+                    <div class="caixa-texto">5</div>
+                </div>
+                <div class="caixas">
+                    <div class="texto">
+                        <p>15 Minutos de Corrida - 1 Serie</p>
+                        <p>5 Lat Row - 3 Series - 30 Minutos de Descanso Entre Elas</p>
+                      </div>
+                    <div class="caixa-lermais">LER MAIS</div>
+                    <div class="caixa-texto">6</div>
+                </div>
+            </div>
+        </div>
+
+            <div id='treino-medio'>
+                <div class="treino1">
+    
+                    <div class="caixas">
+                        <div class="texto">
+                            <p>12 Minutos de Corrida - 2 Serie</p>
+                            <p>30 Lat Pull Down - 4 Series - 30 Minutos de Descanso Entre Elas</p>
+                          </div>
+                        
+                        <div class="caixa-lermais">LER MAIS</div>
+                        <div class="caixa-texto">1</div>
+                    </div>
+                    <div class="caixas">
+                        <div class="texto">
+                            <p>12 Minutos de Corrida - 2 Serie</p>
+                            <p>30 Lat Row - 4 Series - 15 Minutos de Descanso Entre Elas</p>
+                          </div>
+                        <div class="caixa-lermais">LER MAIS</div>
+                        <div class="caixa-texto">2</div>
+                    </div>
+                    <div class="caixas">
+                        <div class="texto">
+                            <p>12 Minutos de Corrida - 2 Serie</p>
+                            <p>40 Cuff Rotators - 4 Series - 15 Minutos de Descanso Entre Elas</p>
+                          </div>
+                        <div class="caixa-lermais">LER MAIS</div>
+                        <div class="caixa-texto">3</div>
+                    </div>
+        
+                </div>
+                <div class="treino2">
+                    <div class="caixas">
+                        <div class="texto">
+                            <p>12 Minutos de Corrida - 2 Serie</p>
+                            <p>30 Cuff Rotators - 4 Series - 15 Minutos de Descanso Entre Elas</p>
+                          </div>
+                        <div class="caixa-lermais">LER MAIS</div>
+                        <div class="caixa-texto">4</div>
+                    </div>
+                    <div class="caixas">
+                        <div class="texto">
+                            <p>30 Lat Row - 4 Series - 15 Minutos de Descanso Entre Elas</p>
+                            <p>40 Cuff Rotators - 4 Series - 15 Minutos de Descanso Entre Elas</p>
+                          </div>
+                        <div class="caixa-lermais">LER MAIS</div>
+                        <div class="caixa-texto">5</div>
+                    </div>
+                    <div class="caixas">
+                        <div class="texto">
+                            <p>25 Minutos de Corrida - 2 Serie</p>
+                            <p>10 Lat Row - 3 Series - 15 Minutos de Descanso Entre Elas</p>
+                          </div>
+                        <div class="caixa-lermais">LER MAIS</div>
+                        <div class="caixa-texto">6</div>
+                    </div>
+                </div>
+            </div>
+
+                <div id='treino-dificil'>
+                    <div class="treino1">
+        
+                        <div class="caixas">
+                            <div class="texto">
+                            <p>24 Minutos de Corrida - 2 Serie</p>
+                            <p>60 Lat Pull Down - 4 Series - 30 Minutos de Descanso Entre Elas</p>
+                        </div>
+                            <div class="caixa-lermais">LER MAIS</div>
+                            <div class="caixa-texto">1</div>
+                        </div>
+                        <div class="caixas">
+                            <div class="texto">
+                            <p>24 Minutos de Corrida - 2 Serie</p>
+                            <p>60 Lat Row - 4 Series - 15 Minutos de Descanso Entre Elas</p>
+                        </div>
+                            <div class="caixa-lermais">LER MAIS</div>
+                            <div class="caixa-texto">2</div>
+                        </div>
+                        <div class="caixas">
+                            <div class="texto">
+                            <p>24 Minutos de Corrida - 2 Serie</p>
+                            <p>80 Cuff Rotators - 4 Series - 15 Minutos de Descanso Entre Elas</p>
+                        </div>
+                            <div class="caixa-lermais">LER MAIS</div>
+                            <div class="caixa-texto">3</div>
+                        </div>
+            
+                    </div>
+                    <div class="treino2">
+                        <div class="caixas">
+                            <div class="texto">
+                            <p>24 Minutos de Corrida - 2 Serie</p>
+                            <p>60 Cuff Rotators - 4 Series - 15 Minutos de Descanso Entre Elas</p>
+                        </div>
+                            <div class="caixa-lermais">LER MAIS</div>
+                            <div class="caixa-texto">4</div>
+                        </div>
+                        <div class="caixas">
+                            <div class="texto">
+                            <p>60 Lat Row - 4 Series - 15 Minutos de Descanso Entre Elas</p>
+                            <p>80 Cuff Rotators - 4 Series - 15 Minutos de Descanso Entre Elas</p>
+                        </div>
+                            <div class="caixa-lermais">LER MAIS</div>
+                            <div class="caixa-texto">5</div>
+                        </div>
+                        <div class="caixas">
+                            <div class="texto">
+                            <p>50 Minutos de Corrida - 2 Serie</p>
+                            <p>20 Lat Row - 3 Series - 15 Minutos de Descanso Entre Elas</p>
+                        </div>
+                            <div class="caixa-lermais">LER MAIS</div>
+                            <div class="caixa-texto">6</div>
+                        </div>
+                    </div>
+
+                </div>
+    
+    
+     
+
+
+
+
+     
+
+
+    <footer>
+
+        <div class="footer-top">
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Home</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#contactos">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Home</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#contactos">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Home</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#contactos">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa news">
+                <div class="newsletter">
+                    <input class="caixa-mail" type="email" name="email" id="email" placeholder="Email" required />
+
+                    <input type="button" value="Subscrever" class="subscreve">
+
+                    <p>Subcreva à nossa newsletter e mantenha-se sempre a par das atualizações!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>Copyright SuperFit &copy; 2021. Todos os Direitos Reservados</p>
+
+            </div>
+
+            <div class="footer-redes">
+
+                <a href="https://www.facebook.com/%22%3E"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/home%22%3E"><i class="fa fa-twitter"></i></a>
+                <a href="https://pt.linkedin.com/%22%3E"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/%22%3E"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="../1-Material/Header/js/header.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

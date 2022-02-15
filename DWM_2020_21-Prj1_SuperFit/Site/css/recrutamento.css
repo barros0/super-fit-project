@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,300,700');
+  
+*{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Montserrat", sans-serif;
+    }
+    
+body {
+    min-height:100vh;
+    width:100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
+    background-color: rgb(216, 216, 216);
+    }
+  
+    
+
+
+/*=============================================================================================================================================================================================================*/
+/*Fundo - Pagina Recrutamento*/
+
+.fundo-recrutamento {
+  background-image: url('../img/recrutamento/escritorio-superfit.png');
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+
+/*=============================================================================================================================================================================================================*/
+/*Fundo -Formulario*/
+
+
+.fundo-form{
+  background-color: #332E2E;
+  opacity: 90%;
+  max-height: 90%;
+  height: 90%;
+  width: 60%;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px;
+  box-shadow: 0 0 4em #332E2E;
+}
+
+
+/*==================================================================================================================================================================================================================*/
+/*FORMULARIO*/
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+select{
+  height: 5vh;
+  width: 200%;
+  border-radius: 20px;
+  text-transform: uppercase;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  margin: 5%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.linha {
+  background-color: white;
+  width: 350%;
+  margin-bottom: 10%;
+  height: 3px;
+  z-index: 99;
+}
+
+.titulo-form {
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: white;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  z-index: 99;
+}
+
+.texto-form{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: bold ;
+  font-family: "Montserrat", sans-serif;
+  padding: 4%;
+  
+}
+
+.caixa-texto{
+  height: 5vh;
+  width: 200%;
+  border-radius: 20px;
+  text-transform: uppercase;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  margin: 5%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.botao{
+  padding: 20px;
+  margin-bottom: 10%;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+  cursor:pointer;
+  transition: all 0.3s ease 0s;
+  border-radius: 20px;
+}
+
+.botao:hover{
+  background-color: white;
+  color:black;
+  
+}
+
+
+
+/*=============================================================================================================================================================================================================*/
+/*FOOTER*/
+
+
+/*FOOTER*/
+
+
+.footer-top {
+  background-color: #282828;
+  display: flex;
+  color: #000;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 20px 5% 20px 5%;
+
+}
+
+.foottop-caixa {
+  display: flex;
+  width: 25%;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.foottop-caixa-news {
+  display: flex;
+  width: 25%;
+  align-items: center;
+}
+
+/*links*/
+
+.footer-links {
+  font-size: 15px;
+  font-weight: 200;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+  font-size: 13px;
+}
+
+.footer-links a:hover {
+  color: #f00;
+}
+
+
+.footer-links a:before {
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/*newsletter*/
+
+.newsletter {
+  display: block;
+  text-align: center;
+
+}
+
+.caixa-mail {
+  width: 100%;
+  padding: 8px 10px 9px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+  height: 35px;
+
+}
+
+.subscreve {
+  padding: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+  font-weight: bold;
+}
+
+.subscreve:hover {
+  padding: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/**copyright*/
+
+.footer-bottom {
+  background-color: #000;
+  display: flex;
+  color: #a1a1a1;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 20px 5% 20px 5%;
+
+}
+
+.footer-copyright {
+  width: 75%;
+  display: flex;
+  align-items: center;
+}
+
+/**icones sociais*/
+
+.footer-bottom .footer-redes a {
+  display: flex;
+  text-decoration: none;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  margin-right: 5px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all .25s;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bottom .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-bottom .footer-redes {
+  display: flex;
+  width: 25%;
+  justify-content: flex-end;
+}
+
+.footer-bottom .footer-redes a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-bottom p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.foottop-caixa-news p {
+  font-size: 13px;
+  color: white;
+}
+
+  /*==========================================================================================================================================================================================================*/
+  /*RESPONSIVO*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/* RESPONSIVO - 1580px */
+
+@media (max-width: 1580px) { 
+
+  .linha {
+    width: 250%;
+}
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/* RESPONSIVO - 1145px */
+
+@media (max-width: 1145px) { 
+
+  .linha {
+    width: 200%;
+}
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/* RESPONSIVO - 905px */
+
+@media (max-width: 905px) { 
+
+  .linha {
+    width: 155%;
+}
+
+.caixa-texto {
+  width: 150%;
+}
+
+select {
+  width: 150%;
+}
+
+.botao {
+  padding: 20px;
+  /* margin-right: 20px; */
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border-radius: 20px;
+}
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/* RESPONSIVO - 705px */
+
+@media (max-width: 705px) { 
+
+  .linha {
+    width: 110%;
+}
+
+.caixa-texto {
+  width: 100%;
+}
+
+select {
+  width: 110%;
+}
+
+.botao {
+  padding: 10px;
+  /* margin-right: 20px; */
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border-radius: 20px;
+}
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/* RESPONSIVO - 450px */
+
+@media (max-width: 450px) { 
+
+  .linha {
+    width: 85%;
+}
+
+.titulo-form {
+  font-size: 25px;
+}
+
+.caixa-texto {
+  width: 80%;
+}
+
+
+select {
+  width: 80%;
+}
+
+.texto-form {
+  font-size: 16px;
+
+}
+
+}

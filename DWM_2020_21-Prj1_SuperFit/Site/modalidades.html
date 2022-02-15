@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SuperFit | Modalidades</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/modalidades.css">
+    <link rel="stylesheet" href="../Site/1-Material/Footer/css/footer.css">
+    <link rel="stylesheet" href="../Site/1-Material/Header/css/header.css">
+    <script src="https://kit.fontawesome.com/27dd9727ef.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-wrap">
+
+            <div class="logo-container"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
+
+            <div class="menu">
+
+                <a href="#saude">Home</a>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Empresa <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="">Sobre</a>
+                        <a href="">Localização</a>
+                        <a href="">Equipa</a>
+                        <a href="">Recrutamento</a>
+                        <a href="">APP</a>
+                        <a href="">Franchising</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class=" dropdown">Saúde <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="">Calcular IMC</a>
+                        <a href="">Consultas de Nutrição</a>
+                        <a href="">Antes/Depois</a>
+                        <a href="">Benefícios do Desporto</a>
+                        <a href="">Lesões</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Preços <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="">Planos</a>
+                        <a href="">Merchandising</a>
+                        <a href="">Parceiros</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Ajuda <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="">FAQ</a>
+                        <a href="">Contactos</a>
+                        <a href="">Normas COVID-19</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-direito">
+                <div class="login-wrapper">
+                    <a class="login" href="#saude">Login</a>
+                    <a class="inscreve " href="#saude">Inscreve-te</a>
+                </div>
+
+                <div class="menu-hamburguer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="submenu" id="submenu">
+            <div class="submenumobile">
+                <div class="ins">
+                    <a href="#login">Login</a>
+                    <a href="#login">Inscreve-te</a>
+                </div>
+                <a href="#saude">Home</a>
+            </div>
+            <a href="#dadadwdwa">Jogo da Memória</a>
+            <a href="#saude">Eventos</a>
+            <a href="#saude">Espaços</a>
+            <a href="#saude">Modalidades</a>
+            <a href="#about">Aulas</a>
+            <a href="#login">Treino em Casa</a>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="empresa()">Empresa <i class="fa fa-caret-down"></i></div>
+                <div id="empresadrop" class="conteudo-dropdown-mobile">
+                    <a href="instagram.com">Sobre</a>
+                    <a href="instagram.com">Localização</a>
+                    <a href="instagram.com">Equipa</a>
+                    <a href="instagram.com">Recrutamento</a>
+                    <a href="instagram.com">APP</a>
+                    <a href="instagram.com">Franchising</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="saude()">Saúde <i class="fa fa-caret-down"></i></div>
+                <div id="saudedrop" class="conteudo-dropdown-mobile">
+                    <a href="">Calcular IMC</a>
+                    <a href="">Consultas de Nutrição</a>
+                    <a href="">Antes/Depois</a>
+                    <a href="">Benefícios do Desporto</a>
+                    <a href="">Lesões</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="precos()">Preços <i class="fa fa-caret-down"></i></div>
+                <div id="precosdrop" class="conteudo-dropdown-mobile">
+                    <a href="">Planos</a>
+                    <a href="">Merchandising</a>
+                    <a href="">Parceiros</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="ajuda()">Ajuda <i class="fa fa-caret-down"></i></div>
+                <div id="ajudadrop" class="conteudo-dropdown-mobile">
+                    <a href="">FAQ</a>
+                    <a href="">Contactos</a>
+                    <a href="">Normas COVID-19</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Modalidades - Pagina -->
+
+
+    <section>
+        <h3>MODALIDADES</h3>
+    </section>
+
+
+    <div class="home">
+        <div class="imagem-home1"></div>
+        <div class="imagem-home2"></div>
+
+        <div class="texto-home">
+            <h1 class="titulo-home">BEM-VINDOS AO FITNESS DA SUPERFIT:</h1>
+            <br><br>
+            <p>A SuperFit tem diversas modalidades a seu dispor.</p>
+            <p>A nossa função é pensar no melhor para si.</p>
+            <p>Dispomos as melhores modalidades e ainda os melhores Personal Trainers de modo a haver uma eficácia de
+                100% em qualquer um dos desportos.</p>
+            <p>Sinta-se a vontade para descobrir mais sobre nos.</p>
+
+        </div>
+
+        <div class="quadrado1" id="quadrado1"></div>
+    </div>
+
+
+
+    <div class="titulo-modalidades">MODALIDADES DA SUPERFIT:</div>
+    <div class="quadrado2"></div>
+    <div class="fundo-modalidades">
+
+
+
+        <div class="modalidades1">
+
+            <div class="caixas" id="imagem1">
+                <div class="caixa-icone"></div>
+                <div class="caixa-texto">CROSSFIT</div>
+                <div class="mod-layer"></div>
+            </div>
+            <div class="caixas" id="imagem2">
+                <div class="caixa-icone"></div>
+                <div class="caixa-texto">RUNNERS</div>
+                <div class="mod-layer"></div>
+            </div>
+            <div class="caixas" id="imagem3">
+                <div class="caixa-icone"></div>
+                <div class="caixa-texto">YOGA</div>
+                <div class="mod-layer"></div>
+            </div>
+
+        </div>
+        <div class="modalidades2">
+            <div class="caixas" id="imagem4">
+                <div class="caixa-icone"></div>
+                <div class="caixa-texto">BOXING</div>
+                <div class="mod-layer"></div>
+            </div>
+            <div class="caixas" id="imagem5">
+                <div class="caixa-icone"></div>
+                <div class="caixa-texto">ZUMBA</div>
+                <div class="mod-layer"></div>
+            </div>
+            <div class="caixas" id="imagem6">
+                <div class="caixa-icone"></div>
+                <div class="caixa-texto">CARDIO</div>
+                <div class="mod-layer"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <footer>
+
+        <div class="footer-top">
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Home</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#contactos">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Home</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#contactos">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Home</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#contactos">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa news">
+                <div class="newsletter">
+                    <input class="caixa-mail" type="email" name="email" id="email" placeholder="Email" required />
+
+                    <input type="button" value="Subscrever" class="subscreve">
+
+                    <p>Subcreva à nossa newsletter e mantenha-se sempre a par das atualizações!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>Copyright SuperFit &copy; 2021. Todos os Direitos Reservados</p>
+
+            </div>
+
+            <div class="footer-redes">
+
+                <a href="https://www.facebook.com/%22%3E"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/home%22%3E"><i class="fa fa-twitter"></i></a>
+                <a href="https://pt.linkedin.com/%22%3E"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/%22%3E"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="../1-Material/Header/js/header.js"></script>
+</body>
+
+</html>
