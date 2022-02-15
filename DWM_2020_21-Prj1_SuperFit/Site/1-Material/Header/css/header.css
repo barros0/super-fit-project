@@ -178,7 +178,7 @@ header {
     display: block;
     text-align: left;
     padding: 16px;
-    text-align: left;
+    text-align: center;
     color: #fff;
     text-decoration: none;
 }
@@ -341,8 +341,15 @@ header {
     .submenumobile {
         display: block;
     }
-
+    
+    .submenu a {
+        text-align: left;
+    }
+    
+    
 }
+
+
 
 #empresadrop, #saudedrop, #precosdrop, #ajudadrop {
     display: none;

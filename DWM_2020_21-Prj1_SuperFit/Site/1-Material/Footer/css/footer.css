@@ -8,6 +8,7 @@
   text-align: left;
   font: normal 16px sans-serif;
   padding: 20px 5% 20px 5%;
+  justify-content: center;
 
 }
 
@@ -184,8 +185,6 @@
     width: 33%;
     text-align: center;
     justify-content: center;
-    align-items: center;
-    align-content: center;
   }
 
   .footer-bottom {

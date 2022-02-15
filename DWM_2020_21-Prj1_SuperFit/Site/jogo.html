@@ -8,8 +8,8 @@
     <title>Jogo da Memória | SuperFit</title>
     <link rel="shortcut icon" type="image/jpg" href="img/logo.ico" />
     <link rel="stylesheet" href="css/jogo.css">
-    <link rel="stylesheet" href="../1-Material/Footer/css/footer.css">
-    <link rel="stylesheet" href="../1-Material/Header/css/header.css">
+    <link rel="stylesheet" href="1-Material/Footer/css/footer.css">
+    <link rel="stylesheet" href="1-Material/Header/css/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
@@ -19,37 +19,128 @@
 <body>
     <header>
         <div class="header-wrap">
-            <div class="logo-container"><img src="img/logo.svg" alt="logo"></div>
+
+            <div class="logo-container"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
+
             <div class="menu">
-                <a href="../João Barros/index.html">Home</a>
-                <a href="../João Duarte/sobre.html">Sobre</a>
-                <a href="#saude">Saúde</a>
-                <a href="#precos">Preços</a>
-                <a href="#ajuda">Ajuda</a>
+
+                <a href="#saude">Home</a>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Empresa <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="sobre.html">Sobre</a>
+                        <a href="Clubes.html">Localização</a>
+                        <a href="equipa.html">Equipa</a>
+                        <a href="recrutamento.html">Recrutamento</a>
+                        <a href="app.html">APP</a>
+                        <a href="franchising.html">Franchising</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class=" dropdown">Saúde <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="imc.html">Calcular IMC</a>
+                        <a href="consultas.html">Consultas de Nutrição</a>
+                        <a href="transformacoes.html">Antes/Depois</a>
+                        <a href="beneficiosd.html">Benefícios do Desporto</a>
+                        <a href="lesoes.html">Lesões</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Preços <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="precos.html">Planos</a>
+                        <a href="loja.html">Merchandising</a>
+                        <a href="patrocinadores.html">Parceiros</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Ajuda <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="faqs.html">FAQ</a>
+                        <a href="contactos.html">Contactos</a>
+                        <a href="medidasc.html">Normas COVID-19</a>
+                    </div>
+                </div>
+
             </div>
+
             <div class="menu-direito">
                 <div class="login-wrapper">
-                    <a class="login" href="../João Barros/login.html">Login</a>
-                    <a class="inscreve " href="../André Sousa/inscrever.html">Inscreve-te</a>
+                    <a class="login" href="login.html">Login</a>
+                    <a class="inscreve " href="inscrever.html">Inscreve-te</a>
                 </div>
+
                 <div class="menu-hamburguer" onclick="myFunction(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
             </div>
-            <div class="submenu-wrap" id="submenu">
-                <div class="submenu-conteudo">
-                    <div class="submenu">
-                        <a href="../João Barros/eventos.html">Eventos</a>
-                        <a href="../André Sousa/espacos.html">Espaços</a>
-                        <a href="../João Duarte/modalidades.html">Modalidades</a>
-                        <a href="#about">Aulas</a>
-                        <a href="#login">Treino em Casa</a>
-                    </div>
+        </div>
+
+        <div class="submenu" id="submenu">
+            <div class="submenumobile">
+                <div class="ins">
+                    <a href="login.html">Login</a>
+                    <a href="inscrever.html">Inscreve-te</a>
+                </div>
+                <a href="index.html">Home</a>
+            </div>
+            <a href="jogo.html">Jogo da Memória</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="espacos.html">Espaços</a>
+            <a href="modalidades.html">Modalidades</a>
+            <a href="aulas.html">Aulas</a>
+            <a href="treino.html">Treino em Casa</a>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="empresa()">Empresa <i class="fa fa-caret-down"></i></div>
+                <div id="empresadrop" class="conteudo-dropdown-mobile">
+                    <a href="sobre.html">Sobre</a>
+                    <a href="clubes.html">Localização</a>
+                    <a href="equipa.html">Equipa</a>
+                    <a href="recrutamento.html">Recrutamento</a>
+                    <a href="app.html">APP</a>
+                    <a href="franchising.html">Franchising</a>
                 </div>
             </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="saude()">Saúde <i class="fa fa-caret-down"></i></div>
+                <div id="saudedrop" class="conteudo-dropdown-mobile">
+                    <a href="imc.html">Calcular IMC</a>
+                    <a href="consultas.html">Consultas de Nutrição</a>
+                    <a href="transformacoes.html">Antes/Depois</a>
+                    <a href="beneficiosd.html">Benefícios do Desporto</a>
+                    <a href="lesoes.html">Lesões</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="precos()">Preços <i class="fa fa-caret-down"></i></div>
+                <div id="precosdrop" class="conteudo-dropdown-mobile">
+                    <a href="precos.html">Planos</a>
+                    <a href="loja.html">Merchandising</a>
+                    <a href="patrocinadores.html">Parceiros</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="ajuda()">Ajuda <i class="fa fa-caret-down"></i></div>
+                <div id="ajudadrop" class="conteudo-dropdown-mobile">
+                    <a href="faqs.html">FAQ</a>
+                    <a href="contactos.html">Contactos</a>
+                    <a href="medidasc.html">Normas COVID-19</a>
+                </div>
+            </div>
+
         </div>
+
     </header>
 
     <div class="titulo">
@@ -275,7 +366,7 @@
     <noscript>JS Enabled Required</noscript>
     <script src="js/elementosjogo.js"></script>
     <script src="js/jogo.js"></script>
-    <script src="..//1-Material/Header/js/header.js"></script>
+    <script src="1-Material/Header/js/header.js"></script>
  
 </body>
 
