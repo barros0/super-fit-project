@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.conteudo {
+    max-width: 90%;
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    height: 100%;
+
+
+}
+
+/*caixa do titulo aka hero image*/
+.titulo {
+    background: #fff;
+    color: #fff;
+    box-shadow: 10px 10px 20px rgb(0 0 0 / 40%);
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("../img/memoria/capa1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+
+}
+
+.titulo h1 {
+    text-transform: uppercase;
+}
+
+/*mascara na hero image*/
+
+.texto-wrap {
+    background: #000000b0;
+    width: 100%;
+    height: 100%;
+    text-align: start;
+
+}
+
+/*titulo na hero image*/
+
+.texto-tit {
+    padding: 15px;
+    padding-top: 0;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.texto-subtit {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 18px;
+
+}
+
+/*div que engolba os textos na hero image*/
+.boxwrap {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 100%;
+    justify-content: center;
+
+}
+
+/*linha com as cartas*/
+.line {
+    max-width: 100%;
+    display: inline-flex;
+
+}
+
+.detalhes-jogo {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jogo {
+    transform-style: preserve-3d;
+
+}
+
+.restart {
+    width: 15%;
+    display: none;
+}
+
+/*bola de ajuda*/
+.ajuda {
+    background-color: #33383b;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    box-shadow: 2px 2px 20px 1px #000000;
+    font-size: 35px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    right: 10px;
+    margin: 20px;
+    float: right;
+    position: sticky;
+}
+
+.ajuda:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+/*como jogar*/
+.comojogar {
+    font-weight: bold;
+    color: white;
+    margin-top: 5%;
+}
+
+.comojogar:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .5s;
+
+}
+
+/**Modal Boxes COMO JOGAR**/
+
+/* background da caixa */
+.caixa-pop {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(0 0 0 / 67%);
+    transition: all 1s ease 0s;
+
+}
+
+/* div que engloba a caixa */
+.conteudo-caixa {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    transform: translateY(15%);
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+/*titulo da caixa*/
+
+.conteudo-caixa h2 {
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+/*wrapper do conteudo dentro da caixa*/
+
+.conteudo-wrap {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+/*texto  dentro da modal box*/
+
+.conteudo-pop {
+    width: 100%;
+    padding: 15px;
+    text-align: justify;
+
+}
+
+li {
+    list-style: none;
+}
+
+.titulo-pop {
+    margin-bottom: 5%;
+}
+
+.final {
+    text-align: center;
+}
+
+.textofinal {
+    margin-top: 5%;
+
+}
+
+/* botao de fechar */
+.close {
+    color: #aaaaaa;
+    float: right;
+    position: absolute;
+    font-size: 28px;
+    top: 0;
+    right: 10px;
+    margin-bottom: 100%;
+    font-weight: bold;
+}
+
+/* botao de fechar em hover */
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*acordiao na caixa de ajuda*/
+
+.acordiao {
+    background-color: #eee;
+    color: #444;
+    text-align: start;
+    padding: 10px;
+    letter-spacing: .07em;
+    height: 50px;
+    font-weight: bold;
+    border: solid #eee;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.acordiao:hover {
+    background-color: #ccc;
+    border: solid #ccc;
+    cursor: pointer;
+}
+
+.acordiaoaberto {
+
+    background-color: #ccc;
+    border: solid #ccc;
+
+}
+
+.conteudo-acordiao {
+    padding: 10px;
+    transition: all 1s ease 0s;
+    display: none;
+}
+
+.nota {
+    font-size: 12px;
+}
+
+/*cartas*/
+
+.carta {
+
+    width: 200px;
+    height: 320px;
+    max-width: 250px;
+    max-height: 400px;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    transition: 1s;
+    transform-style: preserve-3d;
+
+}
+
+.carta:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+/*necessita das duas propriedades para poder sobrepor a classe incial, assim como o  important para tal*/
+.carta-clicada {
+    transform: rotateY(180deg) scale(1.05) !important;
+}
+
+.capa-carta {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+.frente-carta {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+}
+
+.cartarodada {
+    transform: rotateY(180deg) !important;
+}
+
+
+/*mascara antes de começar o jogo*/
+.inativo {
+    z-index: 9;
+    background-color: #000000b5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*botao para comecar o jogo*/
+.jogar {
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+    letter-spacing: .07em;
+    height: 50px;
+    font-weight: bold;
+    border: solid #ff0000;
+    width: 25%;
+}
+
+.jogar:hover {
+    cursor: pointer;
+    background-color: #9b1b1b;
+    color: #fff;
+    border: solid #9b1b1b;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .carta {
+        width: 100px;
+        height: 160px;
+    }
+
+}

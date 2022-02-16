@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*div que engloba a pag toda, com margens*/
+
+.conteudo {
+    max-width: 90%;
+    width: 90%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+}
+
+/*caixa do titulo*/
+.titulo {
+    background: #fff;
+    color: #fff;
+    box-shadow: 10px 10px 20px rgb(0 0 0 / 40%);
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3%;
+    padding: 20px;
+    box-sizing: border-box;
+
+
+}
+
+.titulo h2 {
+    text-transform: uppercase;
+}
+
+.titulo:nth-child(2){
+    margin-top:-3%;
+}
+
+
+/*linhas onde estao as caixas com conteudo (3 caixas por linha)*/
+
+.line {
+    max-width: 100%;
+    display: inline-flex;
+}
+
+.line {
+    max-width: 100%;
+    display: inline-flex;
+}
+
+/*pesquisa*/
+
+.pesquisa {
+    width: 90%;
+}
+
+.pesquisa-filtro {
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.caixapesq {
+    width: 50%;
+    padding: 5px;
+    margin-top: 8px;
+    font-size: 17px;
+    /* border: none; */
+    border: 1px solid #ccc;
+}
+
+.caixafiltro {
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 17px;
+    color: #000;
+    background-color: #fff;
+    /* border: none; */
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: ease .5s;
+}
+
+.caixafiltro:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    transition: ease .5s;
+}
+
+
+/*div que engloba os filtros*/
+
+#filter{
+    display: none;
+}
+
+.filterwrap {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+}
+
+.filtros {
+    width: 100%;
+    display: inline-flex;
+}
+
+.textfilter{
+    color: black;
+}
+
+/*cores nos filtros*/
+.color-wrap-filtro {
+    width: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/*tamanhos nos filtros*/
+.tam-filter {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: 1px black solid;
+    padding: 3px;
+    color: black;
+}
+
+/**divs que englobam as caixas com cores e tamanhos*/
+
+.caixacores{
+    display: inline-flex;
+
+}
+
+.caixacores:hover{
+   cursor: pointer;
+
+}
+
+
+.caixatamanhos{
+    display: inline-flex;
+
+}
+
+
+/*tamanhos em hover*/
+.tam-filter:hover {
+    transition: ease .5s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.lupa {
+    padding: 6px 10px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    margin-left: -5px;
+
+}
+
+
+/*****caixas com conteudo****/
+
+.caixa {
+    margin: 10px;
+    width: 500px;
+    height: 400px;
+    display: block;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    position: relative;
+    background-position: inherit;
+    background-size: contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    transition: 1s;
+
+}
+
+/*mascara que é apresentada em hover*/
+
+.mascara {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    width: 0;
+    height: 100%;
+    display: inline-flex;
+    background: #00000091;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .5s ease;
+
+}
+
+
+/*tamanhos que aparecem em hover*/
+.tam {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: white solid;
+    padding: 3px;
+}
+
+/*tamanhos em hover*/
+.tam:hover {
+    transition: ease .5s;
+    transform: scale(1.1);
+}
+
+/*caixa quando em hover*/
+
+.caixa:hover {
+
+    transform: scale(1.05);
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+/*apresentar a mascara quando dar hover na caixa*/
+
+.caixa:hover .mascara {
+    width: 100%;
+    right: 0;
+
+
+}
+
+/*DETALHES no fundo da caixa com a imagem */
+.detalhes {
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    width: 100%;
+    display: inline-flex;
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+/*nome do produto*/
+.nome {
+    display: flex;
+    max-width: 50%;
+    width: 50%;
+    float: left;
+    padding: 10px;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+/*div que engloba as caixas com preços*/
+.preco {
+    display: flex;
+    max-width: 50%;
+    width: 50%;
+    float: right;
+    padding: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/*preco atual ou regular*/
+.precoatual {
+    padding-right: 20px;
+    font-size: 25px;
+
+}
+
+/*preco anterior ao desconto*/
+.precoanterior {
+    text-decoration: line-through;
+}
+
+/**Percentagem de desconto em destaque */
+.precodestaque {
+    border: 1px solid red;
+    border-right: 0;
+    font-size: 20px;
+    display: flex;
+    color: #000;
+    background: #fff;
+    width: 70px;
+    height: 45px;
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/*CAIXAS DE COR DOS PRODUTOS*/
+
+/*div que engloba as caixas de cor*/
+.color-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+/*quadrados com as cores*/
+.color {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    transition: ease .5s;
+
+}
+
+/*cor em hover*/
+.color:hover {
+    transition: ease .5s;
+    transform: scale(1.1);
+
+}
+
+/*caixa de cor branca*/
+.white {
+    background-color: white;
+    border: 1px solid black;
+
+}
+
+/*caixa de cor vermelha*/
+
+.red {
+    background-color: red;
+    border: 1px solid red;
+
+}
+
+/*caixa de cor PRETA*/
+
+.black {
+    background-color: black;
+    border: 1px solid black;
+
+}
+
+/*imagem de fundo correta para cada produto*/
+
+
+#tshirt {
+    background-image: url("../img/loja/shirt.jpg");
+
+}
+
+#sweat {
+    background-image: url("../img/loja/sweat_red.jpg");
+
+
+}
+
+#luvas {
+    background-image: url("../img/loja/box.jpg");
+
+}
+
+#ttop {
+    background-image: url("../img/loja/ttop.jpg");
+
+}
+
+#luvas-desp {
+    background-image: url("../img/loja/luvas.jpg");
+}
+
+
+#hoodie {
+    background-image: url("../img/loja/hoodie_white.jpeg");
+}
+
+/****faixa de desconto no canto superior esquerdo****/
+
+/*container da faixa*/
+.triangulo-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+/*faixa*/
+.triangulo {
+    z-index: 2;
+    position: absolute;
+    width: 200px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #ED1C24;
+    color: #fff;
+    text-align: center;
+    transform: rotate(-45deg) translate(-28%, -35%);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+/*mobile*/
+
+@media only screen and (max-width: 768px) {
+
+#filter{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.titulo {
+    margin-bottom: 0%; 
+
+}
+
+  .line{
+    display: block;
+  
+  }
+  
+  .caixa{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+
+  }
+
+  /*filtros de pesquisa*/
+
+  .titulo {
+    display: block;
+    width: 100%;
+
+}
+  
+  .pesquisa {
+    width: 100%;
+}
+
+  .pesquisa-filtro {
+    width: 100%;
+}
+
+.filtros {
+    width: 100%;
+    display: block;
+}
+
+.filterwrap {
+    width: 100%;
+}
+
+.color-wrap-filtro {
+    width: 100%;
+}
+
+.caixacores {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixatamanhos {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  }

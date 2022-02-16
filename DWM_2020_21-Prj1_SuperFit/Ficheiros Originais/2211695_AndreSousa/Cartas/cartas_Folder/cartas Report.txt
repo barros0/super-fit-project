@@ -1,0 +1,82 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: cartas.ai
+Color Mode: RGB color
+Color Profile: sRGB IEC61966-2.1
+Ruler Units: pixels
+Artboard Dimensions: 1711,196 px x 1790,3633 px
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+
+C:\Users\André Sousa\Downloads\male-boxer-punching-red-boxing-gloves-29559673.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 3644K, 1300 by 957 pixels
+Dimensions: 1154,332 by 849,766 points 
+Resolution: 81,086 by 81,086 pixels per inch
+
+
+C:\Users\André Sousa\Downloads\Understand-your-running-cadence_small.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 2214K, 1200 by 630 pixels
+Dimensions: 1200 by 630 points 
+Resolution: 72 by 72 pixels per inch
+
+
+C:\Users\André Sousa\Downloads\Canelo1.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 972K, 768 by 432 pixels
+Dimensions: 768 by 432 points 
+Resolution: 72 by 72 pixels per inch
+
+
+C:\Users\André Sousa\Downloads\halterofilismo-arranque.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 36597K, 4000 by 3123 pixels
+Dimensions: 4000 by 3123 points 
+Resolution: 72 by 72 pixels per inch
+
+
+C:\Users\André Sousa\Downloads\https___fansided.com_wp-content_uploads_getty-images_2020_09_1271409882.jpeg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 7816K, 2000 by 1334 pixels
+Dimensions: 2000 by 1334 points 
+Resolution: 72 by 72 pixels per inch

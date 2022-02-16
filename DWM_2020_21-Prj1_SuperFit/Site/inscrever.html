@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrever | SuperFit</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/logo.ico"/>
+    <link rel="stylesheet" href="css/inscrever.css">
+    <link rel="stylesheet" href="1-Material/Footer/css/footer.css">
+    <link rel="stylesheet" href="1-Material/Header/css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/27dd9727ef.js" crossorigin="anonymous"></script>
+</head>
+<body >
+    <header>
+        <div class="header-wrap">
+
+            <div class="logo-container"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
+
+            <div class="menu">
+
+                <a href="index.html">Home</a>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Empresa <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="sobre.html">Sobre</a>
+                        <a href="Clubes.html">Localização</a>
+                        <a href="equipa.html">Equipa</a>
+                        <a href="recrutamento.html">Recrutamento</a>
+                        <a href="app.html">APP</a>
+                        <a href="franchising.html">Franchising</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class=" dropdown">Saúde <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="imc.html">Calcular IMC</a>
+                        <a href="consultas.html">Consultas de Nutrição</a>
+                        <a href="transformacoes.html">Antes/Depois</a>
+                        <a href="beneficiosd.html">Benefícios do Desporto</a>
+                        <a href="lesoes.html">Lesões</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Preços <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="precos.html">Planos</a>
+                        <a href="loja.html">Merchandising</a>
+                        <a href="patrocinadores.html">Parceiros</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Ajuda <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="faqs.html">FAQ</a>
+                        <a href="contactos.html">Contactos</a>
+                        <a href="medidasc.html">Normas COVID-19</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-direito">
+                <div class="login-wrapper">
+                    <a class="login" href="login.html">Login</a>
+                    <a class="inscreve " href="inscrever.html">Inscreve-te</a>
+                </div>
+
+                <div class="menu-hamburguer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="submenu" id="submenu">
+            <div class="submenumobile">
+                <div class="ins">
+                    <a href="login.html">Login</a>
+                    <a href="inscrever.html">Inscreve-te</a>
+                </div>
+                <a href="index.html">Home</a>
+            </div>
+            <a href="jogo.html">Jogo da Memória</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="espacos.html">Espaços</a>
+            <a href="modalidades.html">Modalidades</a>
+            <a href="aulas.html">Aulas</a>
+            <a href="treino.html">Treino em Casa</a>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="empresa()">Empresa <i class="fa fa-caret-down"></i></div>
+                <div id="empresadrop" class="conteudo-dropdown-mobile">
+                    <a href="sobre.html">Sobre</a>
+                    <a href="clubes.html">Localização</a>
+                    <a href="equipa.html">Equipa</a>
+                    <a href="recrutamento.html">Recrutamento</a>
+                    <a href="app.html">APP</a>
+                    <a href="franchising.html">Franchising</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="saude()">Saúde <i class="fa fa-caret-down"></i></div>
+                <div id="saudedrop" class="conteudo-dropdown-mobile">
+                    <a href="imc.html">Calcular IMC</a>
+                    <a href="consultas.html">Consultas de Nutrição</a>
+                    <a href="transformacoes.html">Antes/Depois</a>
+                    <a href="beneficiosd.html">Benefícios do Desporto</a>
+                    <a href="lesoes.html">Lesões</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="precos()">Preços <i class="fa fa-caret-down"></i></div>
+                <div id="precosdrop" class="conteudo-dropdown-mobile">
+                    <a href="precos.html">Planos</a>
+                    <a href="loja.html">Merchandising</a>
+                    <a href="patrocinadores.html">Parceiros</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="ajuda()">Ajuda <i class="fa fa-caret-down"></i></div>
+                <div id="ajudadrop" class="conteudo-dropdown-mobile">
+                    <a href="faqs.html">FAQ</a>
+                    <a href="contactos.html">Contactos</a>
+                    <a href="medidasc.html">Normas COVID-19</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="fundo">
+        <div class="mask-fundo">
+
+    <div class="conteudo">
+
+        <div class="titulo">
+            <div class="texto-wrap">
+                <div class="boxwrap">
+                <div class="texto-tit">
+                    <h1>Inscrição</h1>
+                </div>
+    
+                <div class="texto-subtit">
+    
+                <p>Decidiu que está na altura de mudar o seu estilo de vida?<br> Está no local certo!</p>
+    
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+<div class="indicadores">
+            <div id="bola1" class="indicador atual">1</div>
+            <div class="linha"></div>
+            <div id="bola2" class="indicador">2</div>
+            <div class="linha"></div>
+            <div id="bola3" class="indicador">3</div>
+        </div>
+
+        <div class="formulario">
+
+            <div class="texto">
+                <div class="logotipo"><img src="img/logo.svg" alt="logo"></div>
+                <div id="textopt1" class="textopt1">
+                <p class="info-inscricao">Como o primeiro passo é sempre o mais difícil, estaremos aqui para o acompanhar pelo seu processo de inscrição.</p>
+                <br>
+                <p class="texto-passo">Comece por Indicar os seus dados pessoais:</p>
+                </div>
+    
+                <div id="textopt2" class="textopt2">
+                    <p class="texto-passo">Agora indique os seus contactos</p>
+                  </div>
+    
+                  <div id="textopt3" class="textopt3">
+                    <p class="texto-passo">Está quase, quase!<br>
+                    Só falta dizer-nos no que está interessado</p>
+                    </div>
+            </div>
+
+            <form class="form-insc" action="#" method="POST" onsubmit="return seguinte()">
+              <!---Parte 1 formulário-->
+            <div id="formpt1" class="formpt1">
+                <div class="divisao-esq">
+                    <div class="wrap">
+                    <span class="icone" id="iconeNome"><i aria-hidden="true" class="fa fa-user"></i></span>   
+                    <input class="caixa" type="text" name="nome" id="nome" placeholder="Nome" required/>
+                    <span id="erroNome" class="erro"></span>
+                    </div>
+                </div>
+                <div class="divisao-dir">
+                    <div class="wrap">
+                    <span class="icone" id="iconeSobrenome"><i aria-hidden="true" class="fa fa-user"></i></span>   
+                    <input class="caixa" type="text" name="nome" id="sobrenome" placeholder="Sobrenome" required/>
+                    <span id="erroSobrenome" class="erro"></span>
+                    </div>
+                </div>
+
+                <div class="divisao-esq">
+                    <div class="wrap">
+                    <span class="icone" id="iconeData"><i aria-hidden="true" class="fas fa-calendar-alt"></i></span>   
+                    <input class="caixa" placeholder="Data de Nascimento" type="text" onfocus="(this.type = 'date')"  id="dataNas">
+                    <span id="erroData" class="erro"></span>
+                    </div>
+                </div>
+            
+                
+                <div class="divisao-dir">
+                    <div class="wrap">
+                      <span class="icone" id="iconeGenero"><i aria-hidden="true" class="fas fa-venus-mars"></i></span>
+                    <select class="caixa" name="genero" id="genero">
+                        <option value="">Género</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                      </select>
+                      <div class="seta"></div>
+                      <span id="erroGenero" class="erro"></span>
+                    </div>
+                </div>
+                <div class="divisao-full">
+                    <div class="wrap">
+
+                <input type="checkbox" id="termos" name="termoscondicoes" value="termos" class="termos" required>
+                <label for="termos" class=textotermos></label>
+                <label for="termos" id="textotermos" class="textotermos">Ao continuar confirma que concorda com os nossos Termos & Condições e com a nossa <a href="#">Política de Privacidade</a></label>
+                     <br>   
+                <span id="erroTermos" class="erro"></span>
+                </div>    
+                    </div> 
+                <input type="button" value="PRÓXIMO PASSO" class="seguinte" onclick="seguinte()">
+                </div>
+
+                <!---Parte 2 Formulário-->
+
+                <div id="formpt2" class="formpt2">
+                  <div class="divisao-esq">
+                      <div class="wrap">
+                      <span class="icone" id="iconeMail"><i aria-hidden="true" class="fa fa-envelope"></i></span>   
+                      <input class="caixa" type="email" name="email" id="mail" placeholder="Email" required/>
+                      <span id="erroMail" class="erro"></span>
+                      </div>
+                  </div>
+                  <div class="divisao-dir">
+                      <div class="wrap">
+                      <span class="icone" id="iconeTelefone"><i aria-hidden="true" class="fas fa-phone-alt"></i></span>   
+                      <input class="caixa" type="tel" id="telefone" name="telefone" placeholder="Telemóvel" required>
+                      <span id="erroTelefone" class="erro"></span>
+                    </div>
+                  </div>
+                  <div class="divisao-full">
+                    <div class="wrap">
+
+                <input type="checkbox" id="termos-marketing" name="termoscondicoes" value="termos" class="termos">
+                <label for="termos-marketing" class=textotermos></label>
+                <label for="termos-marketing" id="textomarketing" class="textotermos">Autorizo que usem os meus dados para comunicações de marketing quer seja através de Email, Telefone ou SMS.</label>
+                </div>    
+                    </div> 
+                    <div class="buttons-container">
+                  <input type="button" value="VOLTAR" class="voltar" onclick="anterior()">
+                  <input type="button" value="PRÓXIMO PASSO" class="seguinte2" onclick="seguinte()">
+                </div>
+                  </div>
+
+                <!---Parte 3 Formulário--> 
+
+                  <div id="formpt3" class="formpt3">
+                    <div class="divisao-esq">
+                        <div class="wrap">
+                            <span class="icone" id="iconePlanos"><i aria-hidden="true" class="far fa-clipboard"></i></span>
+                            <select class="caixa" name="planos" id="plano" required>
+                                <option value="">Escolha o Plano</option>
+                                <option value="Normal">Plano Regular</option>
+                                <option value="Premium">Plano Premium</option>
+                              </select>
+                              <div class="seta"></div>
+                              <span id="erroPlanos" class="erro"></span>
+                          </div>
+                          <span class="verplanos"><a href="precos.html" target="_blank" >Ver Planos</a></span>
+
+                    </div>
+                    <div class="divisao-dir">
+                        <div class="wrap">
+                          <span class="icone" id="iconeLocalizacao"><i aria-hidden="true" class="fas fa-map-marker-alt"></i></span>
+                          <select class="caixa" name="localizacao" id="localizacao" required>
+                              <option value="">Localização Pretendida</option>
+                              <option value="Leiria">Leiria</option>
+                              <option value="Lisboa">Lisboa</option>
+                              <option value="Porto">Porto</option>
+                              <option value="Açores">Açores</option>
+                            </select>
+                            <div class="seta"></div>
+                            <span id="erroLocalizacao" class="erro"></span>
+                        </div>
+                      </div>
+
+                      <!---
+                      <div class="divisao-full">
+                        <div class="wrap centro">
+                            <p>Indique as Modalidades Pretendias:</p> 
+                              <br>
+                            <input type="radio" name="opcao1" id="rd1" class="radioModalidades">
+                            <label for="rd1">Crossfit</label>
+                            <input type="radio" name="opcao2" id="rd2" class="radioModalidades">
+                            <label for="rd2">Yoga</label>
+                            <input type="radio" name="opcao3" id="rd3" class="radioModalidades">
+                            <label for="rd3">Super Runners</label>
+                            <span id="erroModalidades" class="erro"></span>
+                            </div>
+                    </div>-->
+                    
+                    <div class="divisao-full">
+                        <div class="wrap centro">
+                    <div class="planos" id="planos">
+                      <div class="plano">Plano 1</div>
+                      <div class="plano">Plano 2</div>
+                      <div class="plano">Plano 3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-container">
+                    <input type="button" value="VOLTAR" class="voltar" onclick="anterior()">
+                    <input type="submit" value="CONCLUIR INSCRIÇÃO" onclick="seguinte()" class="seguinte2">
+                    </div>
+
+                </div>
+        </form>
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+<footer>
+
+    <div class="footer-top">
+        <div class="foottop-caixa">
+            <div class="footer-links">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="Clubes.html">Localização</a></li>
+                    <li><a href="equipa.html">Equipa</a></li>
+                    <li><a href="recrutamento.html">Recrutamento</a></li>
+                    <li><a href="app.html">App</a></li>
+                    <li><a href="franchising.html">Franchising</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foottop-caixa">
+            <div class="footer-links">
+                <h4>Saúde</h4>
+                <ul>
+                    <li><a href="imc.html">Calcular IMC</a></li>
+                    <li><a href="consultas.html">Consultas de Nutrição</a></li>
+                    <li><a href="transformacoes.html">Antes/Depois</a></li>
+                    <li><a href="beneficiosd.html">Benefícios do Desporto</a></li>
+                    <li><a href="lesoes.html">Lesões</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foottop-caixa">
+            <div class="footer-links">
+                <h4>Preços</h4>
+                <ul>
+                    <li><a href="precos.html">Planos</a></li>
+                    <li><a href="loja.html">Merchadising</a></li>
+                    <li><a href="patrocinadores.html">Parceiros</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foottop-caixa">
+            <div class="footer-links">
+                <h4>Ajuda</h4>
+                <ul>
+                    <li><a href="faqs.html">FAQ</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="medidasc.html">Normas COVID-19</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foottop-caixa news">
+            <div class="newsletter">
+                <input class="caixa-mail" type="email" name="email" id="email" placeholder="Email" required />
+
+                <input type="button" value="Subscrever" class="subscreve">
+
+                <p>Subcreva à nossa newsletter e mantenha-se sempre a par das atualizações!</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-copyright">
+            <p>Copyright SuperFit &copy; 2021. Todos os Direitos Reservados</p>
+
+        </div>
+
+        <div class="footer-redes">
+
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/"><i class="fa fa-github"></i></a>
+
+        </div>
+
+    </div>
+</footer>
+
+<noscript>JS Enabled Required</noscript>
+<script src="1-Material/Header/js/header.js"></script>
+<script src="js/inscrever.js"></script>
+
+</body>
+</html>

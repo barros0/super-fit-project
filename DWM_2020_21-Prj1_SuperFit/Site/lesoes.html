@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/lesoes.css">
+    <link rel="stylesheet" href="1-Material/Footer/css/footer.css">
+    <link rel="stylesheet" href="1-Material/Header/css/header.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/27dd9727ef.js" crossorigin="anonymous"></script>
+    <title>SuperFit | Lesões</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-wrap">
+
+            <div class="logo-container"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
+
+            <div class="menu">
+
+                <a href="index.html">Home</a>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Empresa <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="sobre.html">Sobre</a>
+                        <a href="Clubes.html">Localização</a>
+                        <a href="equipa.html">Equipa</a>
+                        <a href="recrutamento.html">Recrutamento</a>
+                        <a href="app.html">APP</a>
+                        <a href="franchising.html">Franchising</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class=" dropdown">Saúde <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="imc.html">Calcular IMC</a>
+                        <a href="consultas.html">Consultas de Nutrição</a>
+                        <a href="transformacoes.html">Antes/Depois</a>
+                        <a href="beneficiosd.html">Benefícios do Desporto</a>
+                        <a href="lesoes.html">Lesões</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Preços <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="precos.html">Planos</a>
+                        <a href="loja.html">Merchandising</a>
+                        <a href="patrocinadores.html">Parceiros</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Ajuda <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="faqs.html">FAQ</a>
+                        <a href="contactos.html">Contactos</a>
+                        <a href="medidasc.html">Normas COVID-19</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-direito">
+                <div class="login-wrapper">
+                    <a class="login" href="login.html">Login</a>
+                    <a class="inscreve " href="inscrever.html">Inscreve-te</a>
+                </div>
+
+                <div class="menu-hamburguer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="submenu" id="submenu">
+            <div class="submenumobile">
+                <div class="ins">
+                    <a href="login.html">Login</a>
+                    <a href="inscrever.html">Inscreve-te</a>
+                </div>
+                <a href="index.html">Home</a>
+            </div>
+            <a href="jogo.html">Jogo da Memória</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="espacos.html">Espaços</a>
+            <a href="modalidades.html">Modalidades</a>
+            <a href="aulas.html">Aulas</a>
+            <a href="treino.html">Treino em Casa</a>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="empresa()">Empresa <i class="fa fa-caret-down"></i></div>
+                <div id="empresadrop" class="conteudo-dropdown-mobile">
+                    <a href="sobre.html">Sobre</a>
+                    <a href="clubes.html">Localização</a>
+                    <a href="equipa.html">Equipa</a>
+                    <a href="recrutamento.html">Recrutamento</a>
+                    <a href="app.html">APP</a>
+                    <a href="franchising.html">Franchising</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="saude()">Saúde <i class="fa fa-caret-down"></i></div>
+                <div id="saudedrop" class="conteudo-dropdown-mobile">
+                    <a href="imc.html">Calcular IMC</a>
+                    <a href="consultas.html">Consultas de Nutrição</a>
+                    <a href="transformacoes.html">Antes/Depois</a>
+                    <a href="beneficiosd.html">Benefícios do Desporto</a>
+                    <a href="lesoes.html">Lesões</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="precos()">Preços <i class="fa fa-caret-down"></i></div>
+                <div id="precosdrop" class="conteudo-dropdown-mobile">
+                    <a href="precos.html">Planos</a>
+                    <a href="loja.html">Merchandising</a>
+                    <a href="patrocinadores.html">Parceiros</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="ajuda()">Ajuda <i class="fa fa-caret-down"></i></div>
+                <div id="ajudadrop" class="conteudo-dropdown-mobile">
+                    <a href="faqs.html">FAQ</a>
+                    <a href="contactos.html">Contactos</a>
+                    <a href="medidasc.html">Normas COVID-19</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <div id="banner" class="banner">
+        <div class="gradiente">
+            <div class="textobanner">
+                <h1 class="titbanner">LESÕES</h1>
+                <p>LESÕES DESPORTIVAS COMUNS E DICAS PARA RECUPERAR</p>
+            </div>
+        </div>
+    </div>
+    <div class="navbarsecundaria">
+        <a href="lesoes.html#comuns">LESÕES COMUNS</a>
+        <a href="lesoes.html#comer">O QUE COMER?</a>
+        <a href="lesoes.html#saude">SAÚDE MENTAL</a>
+        <a href="lesoes.html#prev">COMO PREVENIR</a>
+    </div>
+    <div class="ajuda">
+        <h1>PARA UM MELHOR ACOMPANHAMENTO CONSULTE A NOSSA CLINICA</h1>
+        <a href="consultas.html">CONSULTA</a>
+    </div>
+    <div id="comuns" class="comuns">
+        <div class="linha">
+            <div class="caixa one">
+                <div onmouseover="one()" onmouseout="oneleave()" id="grad1" class="gradiente">
+                    <h1 id="titulo1">TENDÃO DE AQUILES</h1>
+                    <p id="texto1">O uso excessivo do tendão de Aquiles ocorre frequentemente em corredores. Muitas
+                        vezes começa
+                        como
+                        uma dor suave, mas pode levar a uma
+                        dor mais severa quando não tratada. Se a dor é debilitante, podes ter rasgado o tendão de
+                        Aquiles.
+                        Uma vez autorizado para a reabilitação, você precisará esticar o tendão
+                        para recuperar força e flexibilidade. Usar uma inserção de sapato que alivie a tensão no
+                        calcanhar
+                        pode ser útil.</p>
+                </div>
+            </div>
+            <div class="caixa two">
+                <div onmouseover="two()" onmouseout="twoleave()" id="grad2" class="gradiente">
+                    <h1 id="titulo2">TORNOZELO</h1>
+                    <p id="texto2">As lesões no tornozelo são extremamente comuns para todas as idades e capacidades
+                        físicas. Mais comuns são fraturas (quando o osso realmente quebra) e entorses (quando os
+                        ligamentos são rasgados ou rompidos). O inchaço e a incapacidade de andar corretamente são
+                        típicos de lesões no tornozelo, que geralmente requerem o método R.I.C.E. (repouso, gelo,
+                        compressão, elevação.)</p>
+                </div>
+            </div>
+            <div class="caixa three">
+                <div onmouseover="three()" onmouseout="threeleave()" id="grad3" class="gradiente">
+                    <h1 id="titulo3">MÃO E PULSO</h1>
+                    <p id="texto3">Lesões nas mãos e pulsos são muito comuns entre os atletas. Estas lesões incluem
+                        tudo, desde estirpes até fraturas ósseas até inflamação do tendão. Com repouso e cuidado
+                        adequados, ferimentos ligeiros normalmente não causam complicações a longo prazo. No entanto, as
+                        lesões por uso excessivo são comuns e podem causar dor prolongada e dor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="caixa four">
+                <div onmouseover="four()" onmouseout="fourleave()" id="grad4" class="gradiente">
+                    <h1 id="titulo4">LESÃO NO TENDÃO</h1>
+                    <p id="texto4">Se puxou um dos músculos do tendão, provavelmente sentiu uma dor súbita, que pode ter
+                        sido acompanhada pela sensação de uma lágrima ou um estalo. Isto é geralmente seguido por
+                        inchaço, dor e fraqueza. A maioria das lesões no tendão podem ser tratadas com medidas de
+                        autocuidado, tais como repouso, gelo e medicação.</p>
+                </div>
+            </div>
+            <div class="caixa five">
+                <div onmouseover="five()" onmouseout="fiveleave()" id="grad5" class="gradiente">
+                    <h1 id="titulo5">LESÃO NA ANCA</h1>
+                    <p id="texto5">Lesões comuns da anca incluem estirpes, fraturas, contusões ou bursitis. Lesões leves
+                        na anca normalmente requerem uma a três semanas, mas lesões mais graves podem demorar muito mais
+                        tempo.</p>
+                </div>
+            </div>
+            <div class="caixa six">
+                <div onmouseover="six()" onmouseout="sixleave()" id="grad6" class="gradiente">
+                    <h1 id="titulo6">LESÃO NO JOELHO</h1>
+                    <p id="texto6">Lesões comuns no joelho incluem lágrimas no ligamento, tendão e cartilagem. O tempo
+                        de cura varia significativamente dependendo da gravidade. Se uma lesão for mais grave e
+                        necessitar de cirurgia, pode levar até um ano para voltar às atividades. Assim que voltar,
+                        certifique-se de que está a fortalecer corretamente o joelho. Agachamentos e pulmões podem
+                        ajudar no processo de cura, mas apenas se usar a forma e a técnica corretas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="comer" class="comer">
+        <div class="txt">
+            <h1>Que alimentos comer para acelerar o processo de cura</h1>
+            <p>A sua dieta é especialmente importante enquanto recupera de uma lesão. Pode ser fácil procurar conforto
+                em
+                comida deliciosa, mas você ainda precisa ter certeza de que você está recebendo muitos nutrientes. Fique
+                longe de alimentos fritos, muitos hidratos de carbono refinados e açúcares adicionados. Coma alimentos
+                ricos
+                em nutrientes que tenham muitas proteínas, vitaminas e minerais. Certos nutrientes irão beneficiar-te
+                mais
+                do que outros, como os que estão abaixo. Certifique-se de que estes nutrientes fazem parte da sua dieta
+                ou
+                considere tomar suplementos.</p>
+        </div>
+        <div class="acordiao">
+            <div class="caixaacord" onclick="acordone()">
+                <div class="titu">
+                    <h3>Cálcio (e Vitamina D)</h3>
+                    <i id="mais1" class='bx bx-plus'></i>
+                    <i id="menos1" class='bx bx-minus'></i>
+                </div>
+                <div id="alim1" class="alimentos">
+                    <ul>
+                        <li>Laticínios (queijo, iogurte, leite)</li>
+                        <li>Soja</li>
+                        <li>Espinafre</li>
+                        <li>Couve</li>
+                        <li>Sumo de Laranja</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="caixaacord" onclick="acordtwo()">
+                <div class="titu">
+                    <h3>Fibra</h3>
+                    <i id="mais2" class='bx bx-plus'></i>
+                    <i id="menos2" class='bx bx-minus'></i>
+                </div>
+                <div id="alim2" class="alimentos">
+                    <ul>
+                        <li>Salmão</li>
+                        <li>Atum</li>
+                        <li>Ovos inteiros</li>
+                        <li>Cogumelos</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="caixaacord" onclick="acordthree()">
+                <div class="titu">
+                    <h3>Omega-3</h3>
+                    <i id="mais3" class='bx bx-plus'></i>
+                    <i id="menos3" class='bx bx-minus'></i>
+                </div>
+                <div id="alim3" class="alimentos">
+                    <ul>
+                        <li>Feijões</li>
+                        <li>Nozes</li>
+                        <li>Farinha de Aveia</li>
+                        <li>Batatas</li>
+                        <li>Maçãs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="caixaacord" onclick="acordfour()">
+                <div class="titu">
+                    <h3>Proteína</h3>
+                    <i id="mais4" class='bx bx-plus'></i>
+                    <i id="menos4" class='bx bx-minus'></i>
+                </div>
+                <div id="alim4" class="alimentos">
+                    <ul>
+                        <li>Salmão</li>
+                        <li>Sementes de chia</li>
+                        <li>Ostras</li>
+                        <li>Sardinhas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="saude" class="saude">
+        <div class="textosaude">
+            <h1>Uma lesão pode afetar a sua saúde mental</h1>
+            <p>É normal sentir-se chateado ou ansioso depois de uma lesão. A sua lesão pode até consumir os seus
+                pensamentos
+                e dificultar a concentração noutras coisas de que gosta. Estes efeitos colaterais mentais podem até
+                mostrar-se em formas físicas, tais como fadiga, dores de cabeça, dores de estômago, palmas das mãos
+                suadas
+                ou um coração de corrida.</p>
+            <p>Se estás a sentir estes sintomas, compreende que não estás sozinho! Você pode beneficiar de praticar
+                mindfulness e manter uma rotina regular e saudável, incluindo sono adequado e consumo mínimo de álcool.
+                Procure apoio externo se precisar, como terapia de fala ou medicação.</p>
+            <h2>Manter-se ocupado é a chave</h2>
+            <p>Mantenha-se ocupado o máximo possível, para não se preocupar com a sua lesão. Em vez de olhar para este
+                tempo
+                de inatividade como negativo, tente olhar para isto como uma oportunidade. És capaz de redefinir,
+                estabelecer novos objetivos, e concentrar-te em afiar a tua mente em vez do teu corpo.</p>
+        </div>
+        <div class="imgsaude">
+        </div>
+    </div>
+    <div id="prev" class="prevenir">
+        <h1>5 Dicas Para Prevenir Uma Lesão</h1>
+        <ol>
+            <li>AQUEÇA PRIMEIRO, ALONGUE NO FIM</li>
+            <li>USE CALÇADO APROPRIADO</li>
+            <li>MANTENHA-SE HIDRATADO E TENHA UMA ALIMENTAÇÃO EQUILIBRADA</li>
+            <li>PARE EM CASO DE DOR</li>
+            <li>DURMA 8 HORAS POR DIA</li>
+        </ol>
+    </div>
+    <a id="goupbtn" class="goupbtn" href="lesoes.html#banner"><i class='bx bxs-up-arrow-circle'></i></a>
+
+    <footer>
+
+        <div class="footer-top">
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="Clubes.html">Localização</a></li>
+                        <li><a href="equipa.html">Equipa</a></li>
+                        <li><a href="recrutamento.html">Recrutamento</a></li>
+                        <li><a href="app.html">App</a></li>
+                        <li><a href="franchising.html">Franchising</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Saúde</h4>
+                    <ul>
+                        <li><a href="imc.html">Calcular IMC</a></li>
+                        <li><a href="consultas.html">Consultas de Nutrição</a></li>
+                        <li><a href="transformacoes.html">Antes/Depois</a></li>
+                        <li><a href="beneficiosd.html">Benefícios do Desporto</a></li>
+                        <li><a href="lesoes.html">Lesões</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Preços</h4>
+                    <ul>
+                        <li><a href="precos.html">Planos</a></li>
+                        <li><a href="loja.html">Merchadising</a></li>
+                        <li><a href="patrocinadores.html">Parceiros</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="faqs.html">FAQ</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                        <li><a href="medidasc.html">Normas COVID-19</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa news">
+                <div class="newsletter">
+                    <input class="caixa-mail" type="email" name="email" id="email" placeholder="Email" required />
+
+                    <input type="button" value="Subscrever" class="subscreve">
+
+                    <p>Subcreva à nossa newsletter e mantenha-se sempre a par das atualizações!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>Copyright SuperFit &copy; 2021. Todos os Direitos Reservados</p>
+
+            </div>
+
+            <div class="footer-redes">
+
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="1-Material/Header/js/header.js"></script>
+    <script src="js/lesoes.js"></script>
+</body>

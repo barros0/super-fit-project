@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.banner {
+    background: #fff;
+    color: #fff;
+    box-shadow: 10px 10px 20px rgb(0 0 0 / 40%);
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("../img/lesoes_img/pexels-cottonbro-5722159.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+
+.gradiente {
+    padding: 20px;
+    background: #0000002e;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.textobanner {
+    width: 30%;
+    text-align: center;
+}
+
+.titbanner {
+    font-weight: 400;
+    padding: 15px;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.textobanner p {
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.navbarsecundaria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbarsecundaria a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    border-bottom: 2px solid white;
+}
+
+.navbarsecundaria a:hover {
+    transition: 0.5s;
+    border-bottom: 2px solid #ff0000;
+    color: #ff0000;
+}
+
+.ajuda {
+    margin-bottom: 10px;
+    color: white;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #332e2e;
+}
+
+.ajuda h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.ajuda a {
+    border: 2px solid white;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.ajuda a:hover {
+    background-color: white;
+    color: black;
+}
+
+.comuns {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.caixa {
+    margin: 20px;
+    background-color: #403b3b;
+    color: white;
+    width: 350px;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+
+.caixa h1 {
+    text-align: center;
+    display: block;
+}
+
+.caixa p {
+    display: none;
+    text-align: center;
+}
+
+.one {
+    background-image: url(../img/lesoes_img/tendaodeaquiles.png);
+
+}
+
+.two {
+    background-image: url(../img/lesoes_img/tornozelo.png);
+}
+
+.three {
+    background-image: url(../img/lesoes_img/maoepulso.png);
+}
+
+.four {
+    background-image: url(../img/lesoes_img/tendao.png);
+}
+
+.five {
+    background-image: url(../img/lesoes_img/anca.png);
+}
+
+.six {
+    background-image: url(../img/lesoes_img/joelho.png);
+}
+
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover {
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+.comer {
+    display: flex;
+}
+
+.comer .txt, .acordiao {
+    padding: 50px;
+    margin: 50px;
+    width: 50%;
+}
+
+.txt h1, .textosaude h1, .prevenir h1 {
+    font-size: 40px;
+}
+
+.comer p {
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.caixaacord {
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    background-color: #403b3b;
+    color: white;
+}
+
+.titu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+i.bx-minus {
+    display: none;
+}
+
+.alimentos {
+    display: none;
+    padding: 20px;
+}
+
+.saude {
+    display: flex;
+}
+
+.textosaude {
+    padding: 50px;
+    padding-top: 0;
+    margin: 50px;
+    margin-top: 0;
+    width: 50%;
+}
+
+.textosaude p {
+    font-size: 17px;
+    margin-bottom: 1%;
+}
+
+.imgsaude {
+    background-image: url(../img/lesoes_img/pexels-los-muertos-crew-8460098.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    padding-top: 0;
+    margin: 50px;
+    margin-top: 0;
+    width: 50%;
+}
+
+.prevenir h1 {
+    text-align: center;
+}
+
+.prevenir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.prevenir ol {
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+a.goupbtn {
+    width: 1%;
+    display: none;
+    position: fixed;
+    color: #403b3b;
+    font-size: 40px;
+    z-index: 99;
+    margin: 20px;
+    bottom: 0;
+}
+
+@media (max-width: 1000px) {
+    .comer .txt, .acordiao {
+        padding: 50px;
+        margin: 0px;
+        width: 50%;
+    }
+
+    .acordiao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .textosaude, .imgsaude {
+        padding: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .comer {
+        flex-direction: column;
+    }
+
+    .comer .txt, .acordiao {
+        width: 100%;
+    }
+
+    .saude {
+        flex-direction: column;
+    }
+
+    .textosaude {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .imgsaude {
+        padding: 142px;
+        width: auto;
+    }
+
+    .ajuda {
+        height: auto;
+    }
+
+    .caixaacord {
+        width: auto;
+    }
+
+    .comer .txt {
+        text-align: center;
+    }
+
+    .comer .txt, .acordiao {
+        padding: 30px;
+    }
+
+    .textosaude {
+        text-align: center;
+    }
+}

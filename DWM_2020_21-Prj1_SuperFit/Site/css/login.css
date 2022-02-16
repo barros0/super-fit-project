@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/login_img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 7%;
+}
+
+.containerbranco {
+    position: relative;
+    width: 80%;
+    display: flex;
+    padding: 13px 5rem 13px 5rem;
+    background-color: rgba(240, 241, 234, 0.85);
+}
+
+.imgbox {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.formbox {
+    max-width: 1000px;
+    padding: 5rem;
+    padding-right: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-top: -4%;
+}
+
+.formbox h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.line {
+    background: white;
+    margin-bottom: 30px;
+    width: auto;
+    height: 3px;
+}
+
+/*ANIMACAO PLACEHOLDER PARA CIMA*/
+
+input[type="text"], input[type="password"] {
+    height: 55px;
+    width: 100%;
+    color: black;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border-color: black;
+}
+
+input:focus+label, input:valid+label {
+    font-size: 12px;
+    color: black;
+    top: -5px;
+    left: 20px;
+    background: #ffffff;
+    padding: 0px 5px 0px 5px;
+    border-radius: 30px;
+}
+
+.input_wrap {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.input_wrap label {
+    font-size: 16px;
+    color: black;
+    padding: 17px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+}
+
+/*BOTAO CONTINUAR PARA BAIXO*/
+
+.inputbox {
+    margin-bottom: 20px;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+input[type="submit"] {
+    color: black;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+input[type="submit"]:hover {
+    background: rgba(255, 0, 0);
+    color: white;
+}
+
+.manter {
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.inputbox p a {
+    color: white;
+    font-weight: 600;
+}
+
+.inputbox p a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.formbox h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li {
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+.social li:hover {
+    background: rgb(255, 0, 0);
+}
+
+.social i {
+    color: black;
+    font-size: 23px;
+}
+
+.social li:hover i {
+    color: white;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .formbox {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .background {
+        background: linear-gradient(118deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.727) 100%), url(../img/login_img/pexels-mister-mister-3490348.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .formbox {
+        width: 75%;
+    }
+}
+
+@media (max-width: 500px) {
+    .inputbox p {
+        text-align: center;
+    }
+
+    .formbox {
+        width: 100%;
+    }
+}

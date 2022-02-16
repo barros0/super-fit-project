@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1-Material/Footer/css/footer.css">
+    <link rel="stylesheet" href="1-Material/Header/css/header.css">
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/27dd9727ef.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+
+    <title>SuperFit</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-wrap">
+
+            <div class="logo-container"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
+
+            <div class="menu">
+
+                <a href="index.html">Home</a>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Empresa <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="sobre.html">Sobre</a>
+                        <a href="Clubes.html">Localização</a>
+                        <a href="equipa.html">Equipa</a>
+                        <a href="recrutamento.html">Recrutamento</a>
+                        <a href="app.html">APP</a>
+                        <a href="franchising.html">Franchising</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class=" dropdown">Saúde <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="imc.html">Calcular IMC</a>
+                        <a href="consultas.html">Consultas de Nutrição</a>
+                        <a href="transformacoes.html">Antes/Depois</a>
+                        <a href="beneficiosd.html">Benefícios do Desporto</a>
+                        <a href="lesoes.html">Lesões</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Preços <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="precos.html">Planos</a>
+                        <a href="loja.html">Merchandising</a>
+                        <a href="patrocinadores.html">Parceiros</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Ajuda <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="faqs.html">FAQ</a>
+                        <a href="contactos.html">Contactos</a>
+                        <a href="medidasc.html">Normas COVID-19</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-direito">
+                <div class="login-wrapper">
+                    <a class="login" href="login.html">Login</a>
+                    <a class="inscreve " href="inscrever.html">Inscreve-te</a>
+                </div>
+
+                <div class="menu-hamburguer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="submenu" id="submenu">
+            <div class="submenumobile">
+                <div class="ins">
+                    <a href="login.html">Login</a>
+                    <a href="inscrever.html">Inscreve-te</a>
+                </div>
+                <a href="index.html">Home</a>
+            </div>
+            <a href="jogo.html">Jogo da Memória</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="espacos.html">Espaços</a>
+            <a href="modalidades.html">Modalidades</a>
+            <a href="aulas.html">Aulas</a>
+            <a href="treino.html">Treino em Casa</a>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="empresa()">Empresa <i class="fa fa-caret-down"></i></div>
+                <div id="empresadrop" class="conteudo-dropdown-mobile">
+                    <a href="sobre.html">Sobre</a>
+                    <a href="clubes.html">Localização</a>
+                    <a href="equipa.html">Equipa</a>
+                    <a href="recrutamento.html">Recrutamento</a>
+                    <a href="app.html">APP</a>
+                    <a href="franchising.html">Franchising</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="saude()">Saúde <i class="fa fa-caret-down"></i></div>
+                <div id="saudedrop" class="conteudo-dropdown-mobile">
+                    <a href="imc.html">Calcular IMC</a>
+                    <a href="consultas.html">Consultas de Nutrição</a>
+                    <a href="transformacoes.html">Antes/Depois</a>
+                    <a href="beneficiosd.html">Benefícios do Desporto</a>
+                    <a href="lesoes.html">Lesões</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="precos()">Preços <i class="fa fa-caret-down"></i></div>
+                <div id="precosdrop" class="conteudo-dropdown-mobile">
+                    <a href="precos.html">Planos</a>
+                    <a href="loja.html">Merchandising</a>
+                    <a href="patrocinadores.html">Parceiros</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="ajuda()">Ajuda <i class="fa fa-caret-down"></i></div>
+                <div id="ajudadrop" class="conteudo-dropdown-mobile">
+                    <a href="faqs.html">FAQ</a>
+                    <a href="contactos.html">Contactos</a>
+                    <a href="medidasc.html">Normas COVID-19</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <h1 class="heroheading">SUPORTE AS DORES, APRECIE OS GANHOS</h1>
+                <p class="herobody">O preço deixou de ser uma desculpa para não treinar!</p>
+                <a href="precos.html" class="herobtn">Veja o Preçario</a>
+            </div>
+            <a href="#container2"><i id="scrollbtn" class='bx bxs-chevron-down'></i></a>
+        </div>
+    </section>
+
+    <div id="container2" class="container2">
+        <div class="photocontainer">
+            <img id="photoslider" src="img/index_img/pexels-leon-ardho-1552106.jpg" alt="fotodepessoaatreinar">
+        </div>
+        <div class="container2text">
+            <h1 id="tituloslide">Treina todos os dias sem limites e sem fidelização</h1>
+            <p id="textoslide" class="ctxt">A Super Fit é a forma mais fácil de ir direto ao que interessa: o exercício!
+                Se o único compromisso que queres ter é com o teu treino e os teus objetivos, este é o teu ginásio.</p>
+            <span class="pricetxt">Por apenas</span>
+            <p id="precos" class="price">2,99<span>/€ semana</span></p>
+            <a href="inscrever.html" class="btnadere">
+                <span class="btntextadere">ADERE JÁ</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="eve" class="eventos">
+        <h1 class="titevents">Eventos</h1>
+        <div class="cartaseventos">
+            <div class="cartas">
+                <div class="cartaimg carta1"></div>
+                <h2>Sessão de Yoga</h2>
+                <p>Uma sessão de Yoga dinamizada por João Barros.
+                    <br> Um dos grandes benefícios que o Yoga oferece é o relaxamento que provém dos exercícios de
+                    meditação
+                    e de respiração, ajudando assim a diminuir o stress e a ansiedade
+                </p>
+                <a href="index.html#eve" class="btnins" onclick="press()">
+                    <span class="btntxtins">INSCREVE-TE</span>
+                </a>
+            </div>
+            <div class="cartas">
+                <div class="cartaimg carta2"></div>
+                <h2>Bicicleta ao Ar Livre</h2>
+                <p>Além de ser muito prazeroso, andar de bicicleta ao ar livre é um exercício que promete turbinar o
+                    corpo.
+                </p>
+                <a href="index.html#eve" class="btnins" onclick="press()">
+                    <span class="btntxtins">INSCREVE-TE</span>
+                </a>
+            </div>
+            <div class="cartas">
+                <div class="cartaimg carta3"></div>
+                <h2>Sessão de Grávidas</h2>
+                <p>Um programa de aulas para gestantes que buscam bem-estar físico, equilíbrio emocional e uma maior
+                    conexão com seu bebê.</p>
+                <a href="index.html#eve" class="btnins" onclick="press()">
+                    <span class="btntxtins">INSCREVE-TE</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="clube">
+        <h1 class="tituloclube">ENCONTRA O TEU CLUBE</h1>
+        <a class="clubebtn" href="Clubes.html">Ver Todos</a>
+    </div>
+    <div class="local">
+        <h1 class="titlocal">Localização</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d74652.01433390175!2d5.021967922680298!3d51.2866136087796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e1!4m0!4m5!1s0x47c6b5878121fabf%3A0xe3554dcc5203b14e!2sSuperfit%2C%20Europalaan%2099%2C%202470%20Retie%2C%20B%C3%A9lgica!3m2!1d51.286631799999995!2d5.0920778!5e1!3m2!1spt-PT!2spt!4v1642774180389!5m2!1spt-PT!2spt"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <a href="contactos.html" class="localbtn">Localização</a>
+    </div>
+    <a id="goupbtn" class="goupbtn" href="index.html#hero"><i class='bx bxs-up-arrow-circle'></i></a>
+
+
+    <div id="alert" class="alert">
+        <div class="alertbox" onclick="this.parentElement.style.display='none';">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Para se inscrever necessita de fazer login
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="footer-top">
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="Clubes.html">Localização</a></li>
+                        <li><a href="equipa.html">Equipa</a></li>
+                        <li><a href="recrutamento.html">Recrutamento</a></li>
+                        <li><a href="app.html">App</a></li>
+                        <li><a href="franchising.html">Franchising</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Saúde</h4>
+                    <ul>
+                        <li><a href="imc.html">Calcular IMC</a></li>
+                        <li><a href="consultas.html">Consultas de Nutrição</a></li>
+                        <li><a href="transformacoes.html">Antes/Depois</a></li>
+                        <li><a href="beneficiosd.html">Benefícios do Desporto</a></li>
+                        <li><a href="lesoes.html">Lesões</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Preços</h4>
+                    <ul>
+                        <li><a href="precos.html">Planos</a></li>
+                        <li><a href="loja.html">Merchadising</a></li>
+                        <li><a href="patrocinadores.html">Parceiros</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="faqs.html">FAQ</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                        <li><a href="medidasc.html">Normas COVID-19</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa news">
+                <div class="newsletter">
+                    <input class="caixa-mail" type="email" name="email" id="email" placeholder="Email" required />
+
+                    <input type="button" value="Subscrever" class="subscreve">
+
+                    <p>Subcreva à nossa newsletter e mantenha-se sempre a par das atualizações!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>Copyright SuperFit &copy; 2021. Todos os Direitos Reservados</p>
+
+            </div>
+
+            <div class="footer-redes">
+
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/paginalprincipal.js"></script>
+    <script src="1-Material/Header/js/header.js"></script>
+</body>
+
+</html>

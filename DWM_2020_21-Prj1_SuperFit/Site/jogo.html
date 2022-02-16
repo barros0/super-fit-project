@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória | SuperFit</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/logo.ico" />
+    <link rel="stylesheet" href="css/jogo.css">
+    <link rel="stylesheet" href="1-Material/Footer/css/footer.css">
+    <link rel="stylesheet" href="1-Material/Header/css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/27dd9727ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-wrap">
+
+            <div class="logo-container"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
+
+            <div class="menu">
+
+                <a href="index.html">Home</a>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Empresa <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="sobre.html">Sobre</a>
+                        <a href="Clubes.html">Localização</a>
+                        <a href="equipa.html">Equipa</a>
+                        <a href="recrutamento.html">Recrutamento</a>
+                        <a href="app.html">APP</a>
+                        <a href="franchising.html">Franchising</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class=" dropdown">Saúde <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="imc.html">Calcular IMC</a>
+                        <a href="consultas.html">Consultas de Nutrição</a>
+                        <a href="transformacoes.html">Antes/Depois</a>
+                        <a href="beneficiosd.html">Benefícios do Desporto</a>
+                        <a href="lesoes.html">Lesões</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Preços <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="precos.html">Planos</a>
+                        <a href="loja.html">Merchandising</a>
+                        <a href="patrocinadores.html">Parceiros</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Ajuda <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="faqs.html">FAQ</a>
+                        <a href="contactos.html">Contactos</a>
+                        <a href="medidasc.html">Normas COVID-19</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-direito">
+                <div class="login-wrapper">
+                    <a class="login" href="login.html">Login</a>
+                    <a class="inscreve " href="inscrever.html">Inscreve-te</a>
+                </div>
+
+                <div class="menu-hamburguer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="submenu" id="submenu">
+            <div class="submenumobile">
+                <div class="ins">
+                    <a href="login.html">Login</a>
+                    <a href="inscrever.html">Inscreve-te</a>
+                </div>
+                <a href="index.html">Home</a>
+            </div>
+            <a href="jogo.html">Jogo da Memória</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="espacos.html">Espaços</a>
+            <a href="modalidades.html">Modalidades</a>
+            <a href="aulas.html">Aulas</a>
+            <a href="treino.html">Treino em Casa</a>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="empresa()">Empresa <i class="fa fa-caret-down"></i></div>
+                <div id="empresadrop" class="conteudo-dropdown-mobile">
+                    <a href="sobre.html">Sobre</a>
+                    <a href="clubes.html">Localização</a>
+                    <a href="equipa.html">Equipa</a>
+                    <a href="recrutamento.html">Recrutamento</a>
+                    <a href="app.html">APP</a>
+                    <a href="franchising.html">Franchising</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="saude()">Saúde <i class="fa fa-caret-down"></i></div>
+                <div id="saudedrop" class="conteudo-dropdown-mobile">
+                    <a href="imc.html">Calcular IMC</a>
+                    <a href="consultas.html">Consultas de Nutrição</a>
+                    <a href="transformacoes.html">Antes/Depois</a>
+                    <a href="beneficiosd.html">Benefícios do Desporto</a>
+                    <a href="lesoes.html">Lesões</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="precos()">Preços <i class="fa fa-caret-down"></i></div>
+                <div id="precosdrop" class="conteudo-dropdown-mobile">
+                    <a href="precos.html">Planos</a>
+                    <a href="loja.html">Merchandising</a>
+                    <a href="patrocinadores.html">Parceiros</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="ajuda()">Ajuda <i class="fa fa-caret-down"></i></div>
+                <div id="ajudadrop" class="conteudo-dropdown-mobile">
+                    <a href="faqs.html">FAQ</a>
+                    <a href="contactos.html">Contactos</a>
+                    <a href="medidasc.html">Normas COVID-19</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="titulo">
+        <div class="texto-wrap">
+            <div class="boxwrap">
+                <div class="texto-tit">
+                    <h1>Jogo da Memória</h1>
+                </div>
+
+                <div class="texto-subtit">
+
+                    <p>O Cérebro é um músculo que tal como todos precisa de treino<br>Teste a sua capacidade e
+                        habilite-se a ganhar prémios! </p>
+
+                </div>
+                <div class="detalhes-jogo">
+                    <p><i class="far fa-clock"></i> <span id="minutos">00</span>:<span id="segundos">00</span></p>
+                    <p>Tentativas Falhadas: <span id="falhas"></span></p>
+                    <br>
+                    <button type="button" id="restart" class="jogar restart" onclick="iniciarJogo()"><i
+                            class="fas fa-history"></i> RECOMEÇAR</button>
+                </div>
+        
+            </div>
+        </div>
+
+    </div>
+
+    <div id="inativo" class="inativo">
+        <input type="button" value="JOGAR" class="jogar" onclick="iniciarJogo()">
+        <span class="comojogar abrir-ajuda" onclick="ajuda()">COMO JOGAR?</span>
+    </div>
+
+    <div class="conteudo">
+ 
+        <div id="jogo" class="jogo">
+
+
+            <div class="line">
+
+                <div class="carta">
+                    <img src="img/memoria/capa-carta.png" alt="capa" class="capa-carta">
+                    <img src="img/memoria/cartas/carta1.png" alt="frente" class="frente-carta">
+                </div>
+
+                <div class="carta">
+                    <img src="img/memoria/capa-carta.png" alt="capa" class="capa-carta">
+                    <img src="img/memoria/cartas/carta1.png" alt="frente" class="frente-carta">
+                </div>
+
+                <div class="carta">
+                    <img src="img/memoria/capa-carta.png" alt="capa" class="capa-carta">
+                    <img src="img/memoria/cartas/carta1.png" alt="frente" class="frente-carta">
+                </div>
+
+                <div class="carta">
+                    <img src="img/memoria/capa-carta.png" alt="capa" class="capa-carta">
+                    <img src="img/memoria/cartas/carta1.png" alt="frente" class="frente-carta">
+                </div>
+
+            </div>
+
+            <div class="line">
+
+                <div class="carta">
+                    <img src="img/memoria/capa-carta.png" alt="capa" class="capa-carta">
+                    <img src="img/memoria/cartas/carta1.png" alt="frente" class="frente-carta">
+                </div>
+
+                <div class="carta">
+                    <img src="img/memoria/capa-carta.png" alt="capa" class="capa-carta">
+                    <img src="img/memoria/cartas/carta1.png" alt="frente" class="frente-carta">
+                </div>
+
+                <div class="carta">
+                    <img src="img/memoria/capa-carta.png" alt="capa" class="capa-carta">
+                    <img src="img/memoria/cartas/carta1.png" alt="frente" class="frente-carta">
+                </div>
+
+                <div class="carta">
+                    <img src="img/memoria/capa-carta.png" alt="capa" class="capa-carta">
+                    <img src="img/memoria/cartas/carta1.png" alt="frente" class="frente-carta">
+                </div>
+
+            </div>
+
+        </div>
+
+       <div class="ajuda" onclick="ajuda()"><i class="fas fa-question"></i></div>
+
+</div>
+
+    <div id="ajuda" class="caixa-pop">
+        <div class="conteudo-caixa">
+            <h2><span id="fechar" class="close">&times;</span></h2>
+            <div class="conteudo-wrap">
+                <div class="conteudo-pop">
+                    <div class="titulo-pop">
+                        <h2>AJUDA</h2>
+                    </div>
+                    <button type="button" id="botaoac1" class="acordiao" onclick="acordiao1()">Como Jogar? <i
+                            class="fas fa-plus"></i></button>
+                    <div id="acord1" class="conteudo-acordiao">
+                        <p>O jogo da memória consiste em 8 cartas, 4 delas sendo diferentes, e o objetivo é acertar os
+                            pares com o menor número de tentativas possível</p>
+                    </div>
+                    <button type="button" id="botaoac2" class="acordiao" onclick="acordiao2()">Regras <i
+                            class="fas fa-plus"></i></button>
+                    <div id="acord2" class="conteudo-acordiao">
+                        <p>As regras do jogo são bem simples, como já referido anteriormente basta confiar na sua
+                            memória e fazer os pares</p>
+                    </div>
+                    <button type="button" id="botaoac3" class="acordiao" onclick="acordiao3()">Prémios <i
+                            class="fas fa-plus"></i></button>
+                    <div id="acord3" class="conteudo-acordiao">
+                        <p>Se conseguir provar que tem uma memória infalível, temos um prémio especial para si!</p>
+                        <br>
+                        <ul>
+                            <li>0 Tentativas Falhadas: 1 Mês Gratuito em qualquer ginásio SUPERFIT</li>
+                            <li>1 Tentativas Falhadas: 1 Garrafa de Água SUPERFIT</li>
+                            <li>2 Tentativas Falhadas: 1 vale de 5€ de desconto em qualquer ginásio SUPERFIT</li>
+                        </ul>
+                        <br>
+                        <p class="nota">NOTA: É permitido apenas um prémio por cliente, limitado ao stock existente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fimjogo" class="caixa-pop">
+        <div class="conteudo-caixa">
+            <h2><span id="fechar-fim" class="close">&times;</span></h2>
+            <div class="conteudo-wrap">
+                <div class="conteudo-pop final">
+                    <div class="titulo-pop">
+                        <h2>PARABÉNS</h2>
+                        <p class="textofinal">Terminou o jogo com <span id="tentativasfinaljogo"></span> tentativas
+                            falhadas em <span id="minutosfinaljogo"></span><span id="segundofinaljogo"></span> segundos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+        <div class="footer-top">
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="Clubes.html">Localização</a></li>
+                        <li><a href="equipa.html">Equipa</a></li>
+                        <li><a href="recrutamento.html">Recrutamento</a></li>
+                        <li><a href="app.html">App</a></li>
+                        <li><a href="franchising.html">Franchising</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Saúde</h4>
+                    <ul>
+                        <li><a href="imc.html">Calcular IMC</a></li>
+                        <li><a href="consultas.html">Consultas de Nutrição</a></li>
+                        <li><a href="transformacoes.html">Antes/Depois</a></li>
+                        <li><a href="beneficiosd.html">Benefícios do Desporto</a></li>
+                        <li><a href="lesoes.html">Lesões</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Preços</h4>
+                    <ul>
+                        <li><a href="precos.html">Planos</a></li>
+                        <li><a href="loja.html">Merchadising</a></li>
+                        <li><a href="patrocinadores.html">Parceiros</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="faqs.html">FAQ</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                        <li><a href="medidasc.html">Normas COVID-19</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa news">
+                <div class="newsletter">
+                    <input class="caixa-mail" type="email" name="email" id="email" placeholder="Email" required />
+
+                    <input type="button" value="Subscrever" class="subscreve">
+
+                    <p>Subcreva à nossa newsletter e mantenha-se sempre a par das atualizações!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>Copyright SuperFit &copy; 2021. Todos os Direitos Reservados</p>
+
+            </div>
+
+            <div class="footer-redes">
+
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+    </footer>
+    
+    <noscript>JS Enabled Required</noscript>
+    <script src="js/elementosjogo.js"></script>
+    <script src="js/jogo.js"></script>
+    <script src="1-Material/Header/js/header.js"></script>
+ 
+</body>
+
+</html>

@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*div que engloba a pag toda, com margens*/
+
+.fundo{
+    background-image: url("../img/Inscrever/rececao.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.mask-fundo{
+    background: #00000091;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.conteudo {
+  max-width: 90%;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+}
+
+.texto{
+    color: black;
+}
+
+/*caixa do titulo aka hero image*/
+.titulo {
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+
+}
+
+.titulo h1 {
+  text-transform: uppercase;
+}
+
+/*mascara na hero image*/
+
+.texto-wrap {
+  width: 100%;
+  height: 100%;
+  text-align: start;
+
+}
+
+/*div que engolba os textos na hero image*/
+.boxwrap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 100%;
+  justify-content: center;
+
+}
+
+/*titulo na hero image*/
+
+.texto-tit {
+  padding: 15px;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.info-inscricao{
+  font-size: small;
+
+}
+
+.texto-passo {
+  font-weight: bold;
+  margin-bottom: 5%;
+
+}
+
+/*subtitulo na hero image*/
+/*
+.texto-subtit {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 40%;
+  text-align: start;
+  margin-left: 10%;
+
+}
+*/
+.texto-subtit {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 18px;
+
+
+  /* margin-left: 10%; */
+}
+
+/*linhas onde estao as caixas com conteudo (3 caixas por linha)*/
+
+.line {
+  max-width: 100%;
+  display: inline-flex;
+
+}
+
+
+
+/*descricao em hover*/
+.descricao {
+  padding: 10px;
+}
+
+
+
+
+.indicadores {
+
+    text-align: center;
+
+}
+
+/*bola*/
+.indicador {
+
+    max-height: 60px;
+    max-width: 60px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    background-color: #c6c6c6;
+    font-size: 30px;
+    vertical-align: middle;
+    /*border: solid black;*/
+    color: #fff;
+    display: inline-flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+
+}
+
+/*bola selecionada*/
+.atual {
+    background-color: #ff0000;
+    height: 75px;
+    width: 75px;
+    max-height: 75px;
+    max-width: 75px;
+}
+
+/*linhas que conectam os indicadores*/
+
+.linha {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3px;
+    background-color: white;
+    width: 15%;
+
+}
+
+
+
+/*formulario*/
+
+.formulario {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    display: grid;
+
+}
+
+
+.divisao-full {
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+  font-size: 14px;
+  text-align: justify;
+
+}
+
+.divisao-full a{
+  text-decoration: none;
+  color: #ff0000;
+
+}
+
+.divisao-esq {
+    width: 50%;
+    float: left;
+    padding: 0 15px 0 0;
+    box-sizing: border-box;
+    margin-bottom: 3%;
+
+}
+
+.verplanos {
+  font-size: 10px;
+  float: left;
+}
+
+.verplanos a{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+
+}
+
+.verplanos:hover {
+cursor: pointer;
+}
+
+#planos{
+  display: none;
+}
+
+
+.seta {
+  position: absolute;
+  top: calc(50% - 4px);
+  right: 15px;
+  border-width: 8px 5px 0 5px;
+  border-style: solid;
+  border-color: #ccc transparent transparent transparent;
+}
+
+.divisao-dir {
+  width: 50%;
+  float: left;
+  padding: 0 0 0 15px;
+  box-sizing: border-box;
+  margin-bottom: 3%;
+
+}
+
+/*botao termos e condicoes*/
+.textotermos {
+	display: inline;
+  vertical-align: middle;
+
+}
+
+.centro{
+  text-align: center;
+}
+
+.termos {
+	display: none;
+}
+
+.termos + .textotermos {
+	background-color: #fff;
+	border: 1px solid #cacece;
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.termos:checked + .textotermos {
+	background-color: #fff;
+	border: 1px solid #adb8c0;
+	color: #99a1a7;
+}
+
+.termos:checked + .textotermos:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #ff0000;
+}
+
+
+.caixa {
+    width: 100%;
+    padding: 8px 10px 9px 35px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+    height: 35px;
+
+}
+
+.icone {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    color: #333;
+    height: 100%;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 30px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.wrap {
+    position: relative;
+    margin-bottom: 20px;
+    -webkit-animation: bounce 0.6s ease-out;
+    animation: bounce 0.6s ease-out;
+}
+
+.icone i {
+    padding-top: 10px;
+}
+
+select {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    padding: 0px 15px;
+    cursor: pointer;
+    color: #7b7b7b;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    background: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: all 0.2s ease;
+}
+
+.buttons-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.seguinte {
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+    letter-spacing: .07em;
+    height: 50px;
+    font-weight: bold;
+    border: solid #ff0000;
+    width: 100%;
+
+}
+
+.seguinte2 {
+  border-radius: 5px;
+  background-color: #ff0000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+  letter-spacing: .07em;
+  height: 50px;
+  font-weight: bold;
+  border: solid #ff0000;
+  width: 49%;
+}
+
+.seguinte2:hover {
+  cursor: pointer;
+  background-color: #9b1b1b;
+  color: #fff;
+  border: solid #9b1b1b;
+
+}
+
+.seguinte:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #9b1b1b;
+    border: solid #9b1b1b;
+
+}
+
+/*botao voltar**/
+.voltar {
+  border-radius: 5px;
+  background-color: #5a5151;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+  letter-spacing: .07em;
+  height: 50px;
+  font-weight: bold;
+  border: solid #5a5151;
+  width: 49%;
+    float: left;
+
+}
+
+.voltar:hover {
+    cursor: pointer;
+    background-color: #c6c6c6;
+    border-color:#c6c6c6;
+}
+
+/*planos*/
+.plano {
+    text-align: center;
+    width: 30%;
+    height: 100%;
+    border: solid black;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+/*logotipo formulario*/
+.logotipo {
+  max-width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/**esconder caixas de inicio**/
+#textopt1 {
+    display: block;
+}
+
+#textopt2 {
+    display: none;
+}
+
+#textopt3 {
+    display: none;
+}
+
+#formpt1 {
+    display: block;
+}
+
+#formpt2 {
+    display: none;
+}
+
+#formpt3 {
+    display: none;
+}
+
+/*classe do texto de erro*/
+.erro{
+  color: red;
+  font-size: 11px;
+  float: left;
+
+}
+
+/*responsivo*/
+
+@media only screen and (max-width: 768px) {
+
+.conteudo{
+  max-width: 95%;
+  width: 95%;
+}
+
+.formulario{
+  width: 100%;
+}
+
+.divisao-dir{
+  width: 100%;
+  padding: 0;
+
+}
+
+.divisao-esq{
+  width: 100%;
+  padding: 0;
+
+}
+
+.buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.voltar{
+  margin-bottom: 1%;
+  width: 100%;
+}
+
+.seguinte2 {
+  width: 100%;
+
+}
+
+}
+
+/*telemoveis mais pequenos*/
+@media only screen and (max-width: 400px) {
+
+  .indicadores {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.linha {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3px;
+    background-color: white;
+    width: 15%;
+    flex-direction: column;
+    align-content: center;
+    margin: 30px;
+    transform: rotate(90deg);
+}
+
+}

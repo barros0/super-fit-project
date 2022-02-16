@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*div que engloba a pag toda, com margens*/
+
+.conteudo {
+  max-width: 90%;
+  width: 90%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+}
+
+/*caixa do titulo aka hero image*/
+.titulo {
+  background: #fff;
+  color: #fff;
+  box-shadow: 10px 10px 20px rgb(0 0 0 / 40%);
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3%;
+  background-image: url("../img/transformacoes/capa2.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 500px;
+
+}
+
+.titulo h1 {
+  text-transform: uppercase;
+}
+
+p.texto-caixa {
+  margin-bottom: 20px;
+}
+
+/*mascara na hero image*/
+
+.texto-wrap {
+  background: #00000091;
+  width: 100%;
+  height: 100%;
+  text-align: start;
+
+}
+
+/*div que engolba os textos na hero image*/
+.boxwrap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 100%;
+  justify-content: center;
+
+}
+
+/*titulo na hero image*/
+.texto-tit {
+  padding: 15px;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.texto-subtit {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  font-size: 18px;
+
+  /* margin-left: 10%; */
+}
+
+/*linhas onde estao as caixas com conteudo (3 caixas por linha)*/
+
+.line {
+  max-width: 100%;
+  display: inline-flex;
+}
+
+/*****caixas com conteudo****/
+
+.caixa {
+  margin: 20px;
+  width: 300px;
+  height: 600px;
+  display: block;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  transition: 1s;
+  overflow: hidden;
+}
+
+/*foto antes */
+.antes{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+
+/*foto depois*/
+.depois{
+  /*clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);*/
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+
+}
+
+.wrap-comparador  {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: contents;
+}
+
+
+span.antes-info {
+  color: white;
+  padding: 5px;
+  position: absolute;
+  left: 0;
+}
+
+span.depois-info {
+  color: white;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+}
+
+/*slider*/
+.comparador{
+  position: relative;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  cursor: ew-resize;
+  /*alinhar seta ao meio*/
+  width: calc( 100% + 45px);
+  margin-left: -22.5px;
+  margin-top: -20%;
+}
+
+.comparador::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 45px;
+  width: 45px;
+  position: relative;
+  background: #fff;
+  clip-path: polygon(0 50%, 20% 30%, 20% 45%, 80% 45%, 80% 30%, 100% 50%, 80% 70%, 80% 55%, 20% 55%, 20% 70%);
+  cursor: ew-resize;
+}
+
+.comparador::-webkit-slider-thumb:hover{
+  background: #ff0000;
+}
+
+/*mascara que é apresentada em hover na caixa*/
+
+.mascara {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  width: 0;
+  height: 100%;
+  display: inline-flex;
+  background: #000000b5;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: .5s ease;
+
+}
+
+/*caixa quando em hover*/
+
+.caixa:hover {
+
+  transform: scale(1.05);
+  transition: 1s;
+  cursor: pointer;
+
+}
+
+/*apresentar a mascara quando dar hover na caixa*/
+
+.caixa:hover .mascara {
+  width: 100%;
+  right: 0;
+}
+
+/*texto "ver mais" apresentado na mascara*/
+.texto {
+  position: absolute;
+  text-transform: uppercase;
+  white-space: nowrap;
+  bottom: 20%;
+
+
+}
+
+/*descricao em hover*/
+.descricao {
+  padding: 10px;
+}
+
+/*imagem de fundo correta para cada espaco*/
+
+
+
+/****faixa ao fundo da caixa com nome do espaco****/
+
+
+/*container da faixa*/
+
+.detalhes-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+/*faixa*/
+
+.detalhes {
+  z-index: 2;
+  /*position: absolute;*/
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  font-size: 13px;
+  background-color: #dd0f0fbd;
+  color: #fff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+
+}
+
+/*detalhes do cliente*/
+
+.info-cliente {
+  background-color: #0000008c;
+  color: white;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  height: 50px;
+  
+}
+
+.peso{
+  text-align: start;
+
+}
+
+.idade{
+  text-align: end;
+  font-style: italic;
+
+}
+
+/**Modal Boxes Espaços**/
+
+/* background da caixa */
+.caixa-pop {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(0 0 0 / 67%);
+    transition: all 1s ease 0s;
+
+}
+
+/* div que engloba a caixa */
+.conteudo-caixa {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  transform: translateY(15%);
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+/*titulo da caixa*/
+
+.conteudo-caixa h2 {
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+/*wrapper do conteudo dentro da caixa*/
+
+.conteudo-wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+/*texto  dentro da modal box*/
+
+.conteudo-pop {
+  width: 40%;
+  max-width: 40%;
+
+  padding: 15px;
+  text-align: justify;
+
+}
+
+.conteudo-pop p {
+  margin-top: 5%;
+
+}
+
+/* botao de fechar */
+.close {
+  color: #aaaaaa;
+  float: right;
+  position: absolute;
+  font-size: 28px;
+  top: 0;
+  right: 10px;
+  margin-bottom: 100%;
+  font-weight: bold;
+}
+
+/* botao de fechar em hover */
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*slider*/
+.slider {
+  max-width: 60%;
+  width: 60%;
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+/*
+
+.slider {
+  max-width: 60%;
+  width: 60%;
+
+}
+*/
+/*imagem do slider*/
+
+.slideimage {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+/*div engloba as imagens dos sliders */
+.slidewrp{
+    max-width: 100%;
+    width: 100%;
+   /* height: 100%;
+    max-height: 100%;*/
+}
+
+.detalhes{
+  display: none;
+}
+
+
+
+/*mobile*/
+/*
+@media only screen and (max-width: 1500px) {
+
+ .slider {
+max-height: 500px;
+  }
+
+}*/
+
+@media only screen and (max-width: 768px) {
+
+
+  .texto-subtit {
+     margin-left: 0; 
+     box-sizing: border-box;
+
+  }
+
+.line{
+  display: block;
+
+}
+
+.conteudo-caixa {
+  padding: 10px;
+}
+
+.caixa{
+  width: 100%;
+  max-width: 300px; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+
+}
+
+.conteudo-pop {
+padding: 20px;
+box-sizing: border-box;
+
+} 
+
+.conteudo-caixa {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top:0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateY(50%);
+  box-sizing: border-box;
+}
+
+.conteudo-wrap {
+  flex-direction: column;
+}
+
+.slider {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding:15px;
+
+}
+
+.conteudo-pop {
+  width: 100%;
+  max-width: 100%;
+}
+
+.close {
+  right: 5px;
+
+}
+
+}
