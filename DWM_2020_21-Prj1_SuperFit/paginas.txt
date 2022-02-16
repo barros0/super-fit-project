@@ -15,7 +15,7 @@
 	transformacoes.html
 
 2211726 - Beatriz Gameiro
-	BeatrizGameiro.html
+	BeatrizGameirocv.html
 	app.html
 	beneficiosd.html
 	clubes.html
@@ -31,11 +31,12 @@
 	lesoes.html
 
 2211713 - João Duarte
-	joaoduartecv.html
+	JoaoDuartecv.html
 	modalidades.html
 	patrocinadores.html
 	recrutamento.html
 	sobre.html
+	treino.html
 
 Todos:
 	jogo.html
