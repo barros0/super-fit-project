@@ -1,7 +1,7 @@
-rel.doc -
+rel.doc - incluido
 manualnormas.pdf - incluido
-paginas.txt - 
+paginas.txt - incluido
 site - 
-ficheiros originais -
+ficheiros originais - incluido
 wireframes - incluido
-outros - 
+outros - incluido
