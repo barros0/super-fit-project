@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/27dd9727ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="1-Material/Footer/css/footer.css">
+    <link rel="stylesheet" href="1-Material/Header/css/header.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>SuperFit | Login</title>
 </head>
 
 <body>
@@ -23,7 +21,7 @@
 
             <div class="menu">
 
-                <a href="index.html">Home</a>
+                <a href="#saude">Home</a>
 
                 <div class="menu-dropdown">
                     <button class="dropdown">Empresa <i class="fa fa-caret-down"></i></button>
@@ -141,9 +139,119 @@
         </div>
 
     </header>
+    <div class="background">
+        <div class="container">
+            <div class="formbox">
+                <h2>LOGIN</h2>
+                <form>
+                    <div class="line"></div>
+                    <div class="input_wrap">
+                        <input type="text" required>
+                        <label>Nome</label>
+                    </div>
+                    <div class="input_wrap">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="manter">
+                        <label><input type="checkbox"> Manter Sessão Iniciada</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" value="Continuar" name="continuar">
+                    </div>
+                    <div class="inputbox">
+                        <p>Não tem uma conta ? <a href="#">Inscreve-te!</a></p>
+                    </div>
+                </form>
+                <h3>Login com Redes Sociais</h3>
+                <ul class="social">
+                    <li><i class='bx bxl-facebook-square'></i></li>
+                    <li><i class='bx bxl-instagram'></i></li>
+                    <li><i class='bx bxl-twitter'></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    <script src="js/header.js"></script>
+    <footer>
 
+        <div class="footer-top">
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="Clubes.html">Localização</a></li>
+                        <li><a href="equipa.html">Equipa</a></li>
+                        <li><a href="recrutamento.html">Recrutamento</a></li>
+                        <li><a href="app.html">App</a></li>
+                        <li><a href="franchising.html">Franchising</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Saúde</h4>
+                    <ul>
+                        <li><a href="imc.html">Calcular IMC</a></li>
+                        <li><a href="consultas.html">Consultas de Nutrição</a></li>
+                        <li><a href="transformacoes.html">Antes/Depois</a></li>
+                        <li><a href="beneficiosd.html">Benefícios do Desporto</a></li>
+                        <li><a href="lesoes.html">Lesões</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Preços</h4>
+                    <ul>
+                        <li><a href="precos.html">Planos</a></li>
+                        <li><a href="loja.html">Merchadising</a></li>
+                        <li><a href="patrocinadores.html">Parceiros</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa">
+                <div class="footer-links">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="faqs.html">FAQ</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                        <li><a href="medidasc.html">Normas COVID-19</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foottop-caixa news">
+                <div class="newsletter">
+                    <input class="caixa-mail" type="email" name="email" id="email" placeholder="Email" required />
+
+                    <input type="button" value="Subscrever" class="subscreve">
+
+                    <p>Subcreva à nossa newsletter e mantenha-se sempre a par das atualizações!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <p>Copyright SuperFit &copy; 2021. Todos os Direitos Reservados</p>
+
+            </div>
+
+            <div class="footer-redes">
+
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="1-Material/Header/js/header.js"></script>
+    <script src="https://kit.fontawesome.com/27dd9727ef.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
