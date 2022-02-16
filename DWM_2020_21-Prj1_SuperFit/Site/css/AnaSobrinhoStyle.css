@@ -38,27 +38,27 @@ body, html {
 }
 
 .hero-bg-aulas {
-    background-image: url(../img/hero/consultas.jpg);
+    background-image: url(../img/AnaSobrinho/hero/consultas.jpg);
 }
 
 .hero-bg-consultas {
-    background-image: url(../img/hero/consultas.jpg);
+    background-image: url(../img/AnaSobrinho/hero/consultas.jpg);
 }
 
 .hero-bg-cv {
-    background-image: url(../img/hero/cv.jpg);
+    background-image: url(../img/AnaSobrinho/hero/cv.jpg);
 }
 
 .hero-bg-equipa {
-    background-image: url(../img/hero/equipa.jpeg);
+    background-image: url(../img/AnaSobrinho/hero/equipa.jpeg);
 }
 
 .hero-bg-imc {
-    background-image: url(../img/hero/imc.jpg);
+    background-image: url(../img/AnaSobrinho/hero/imc.jpg);
 }
 
 .hero-bg-precos {
-    background-image: url(../img/hero/precos.jpg);
+    background-image: url(../img/AnaSobrinho/hero/precos.jpg);
 }
 
 .hero-overlay{
@@ -638,7 +638,7 @@ select {
 }
 
 .bg-conteudo-consultas {
-    background-image: url('../img/consultas.jpg');
+    background-image: url('../img/AnaSobrinho/consultas.jpg');
 }
 
 /* EQUIPA */
