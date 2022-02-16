@@ -1028,6 +1028,10 @@ td, th {
     padding-bottom: 5rem;
 }
 
+.bg-conteudo-imc {
+    background-image: url('../img/AnaSobrinho/imc.jpg');
+}
+
 /***** RESPONSIVIDADE *****/
 
 /* SM (mobile) - 640px ou maior */
@@ -1178,7 +1182,7 @@ td, th {
 
     .coluna1-formulario {
         background-color: #ffffff;
-        display: block; 
+        display: block;
         width: 55%; 
     }
 
