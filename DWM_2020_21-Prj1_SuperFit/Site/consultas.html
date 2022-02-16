@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de IMC</title>
+    <title>Consultas de Nutrição</title>
     <link rel="stylesheet" href="css/AnaSobrinhoStyle.css">
-    <script src="js/imc.js"></script>
     <link rel="stylesheet" href="1-Material/Footer/css/footer.css">
     <link rel="stylesheet" href="1-Material/Header/css/header.css">
     <script src="https://kit.fontawesome.com/27dd9727ef.js" crossorigin="anonymous"></script>
@@ -142,64 +141,124 @@
 
     <div class="hero hero-grande">
 
-        <div class="bg-hero hero-bg-imc">
+        <div class="bg-hero hero-bg-consultas">
             <div class="hero-overlay"></div>
         </div>
     
         <div class="texto-hero">
-            <h1 class="titulo-hero">Índice de Massa Corporal</h1>
+            <h1 class="titulo-hero">Consultas de Nutrição</h1>
         </div>
     
     </div>
-
-    <section class="seccao-imc">
-        <!-- Calculadora IMC -->
-        <div class="caixa-conteudo">
+      
+    <section class="seccao-consultas">
     
-            <!-- Linha -->
-            <div class="conteudo">
-
-                <!-- Coluna 1: Imagem -->
-                <div class="coluna1-formulario">
+            <!-- Benefícios -->
+            <div class="beneficios-consultas">
+                
+                <!-- Caixa 1 -->
+                <div class="caixa-beneficios">
+    
+                    <!-- icon -->
+                    <div class="icon-beneficios">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="tamanho-icon" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                    </div>
+                    
+                    <h6 class="titulo-beneficios">Focadas nos seus objetivos</h6>
+                    
+                    <p class="texto-beneficios">
+                        Irá mostrá-lo como ter e saber manter uma alimentação adequada aos seus objetivos
+                    </p>
+                </div>
+              
+                <!-- Caixa 2 -->
+                <div class="caixa-beneficios">
+                    <div class="icon-beneficios">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="tamanho-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    
+                    <h6 class="titulo-beneficios">Focadas na sua saúde</h6>
+                    
+                    <p class="texto-beneficios">
+                        Terá uma dieta equilibrada com atenção as suas limitações e sem restrições alimentares
+                    </p>
+                </div>
+    
+                <!-- Caixa 3 -->
+                <div class="caixa-beneficios">
+                    <div class="icon-beneficios">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="tamanho-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    
+                    <h6 class="titulo-beneficios">Focadas na sua educação</h6>
+            
+                    <p class="texto-beneficios">
+                        Irá educá-lo sobre os alimentos e rótulos para que possa alimentar-se consiente e autonomamente
+                    </p>
                 </div>
 
-                <!-- Coluna 2: Formulário -->
-                <div class="coluna2-formulario">
-                    <h3 class="titulo-coluna">Calculadora IMC</h3>
-                    
-                    <form action="#" method="POST" onsubmit="calcularIMC()">
-                        
-                        <label for="sexo">Sexo</label>
-                        <select id="sexo" name="sexo">
-                            <option value="feminino">Feminino</option>
-                            <option value="masculino">Masculino</option>
-                        </select>
+            </div> <!-- Fim Benefícios -->
+            
+      
+            <!-- Inscrição Consultas -->
+            <div class="caixa-conteudo">
+    
+                    <!-- Linha -->
+                    <div class="conteudo">
+    
+                        <!-- Coluna 1: Imagem -->
+                        <div class="coluna1-formulario bg-conteudo-consultas">
+                        </div>
+    
+                        <!-- Coluna 2: Formulário -->
+                        <div class="coluna2-formulario">
+                            <h3 class="titulo-coluna">Primeira Consulta Grátis</h3>
+                            
+                            <form action="#" method="POST">
+                                
+                                <label for="nome">Primeiro Nome</label>
+                                <input id="nome" type="text" placeholder="Primeiro Nome" required pattern="([A-zÀ-ž\s]){2,}"/>
 
-                        <label for="idade">Idade (anos)</label>
-                        <input id="idade" type="number" placeholder="23" required min="16" max="110" pattern="[0-9]{3}"
-                        oninvalid="this.setCustomValidity('Introduza uma idade válida, entre 16 e 110 anos.')" oninput="this.setCustomValidity('')">
+                                <label for="apelido">Último Nome</label>
+                                <input id="apelido" type="text" placeholder="Último Nome" required pattern="([A-zÀ-ž\s]){2,}"/>
 
-                        <label for="altura">Altura (cm)</label>
-                        <input id="altura" type="number" placeholder="164" required min="90" max="220" pattern="[0-9]{3}"
-                        oninvalid="this.setCustomValidity('Introduza uma altura válida, entre 90 a 220cm')" oninput="this.setCustomValidity('')">
+                                <label for="email">Email</label>
+                                <input id="email" type="email" placeholder="exemplo@mail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
 
-                        <label for="peso">Peso (kg)</label>
-                        <input id="peso" type="number" step="0.01" placeholder="56" required min="40" max="300" pattern="[+-]?([0-9]*[.])?[0-9]+"
-                        oninvalid="this.setCustomValidity('Introduza um peso válido, entre 40 a 300kg e com no máximo duas casas decimais.')" oninput="this.setCustomValidity('')">
+                                <label for="nrSocio">Número de Sócio</label>
+                                <input id="nrSocio" type="number" placeholder="1234567" required pattern="[0-9]{7}"/>
 
-                        <label for="atividade">Atividade Física</label>   
-                        <select id="atividade" name="atividade">
-                            <option value="sedentaria">Sedentária</option>
-                            <option value="moderada">Moderada</option>
-                            <option value="intensa">Intensa</option>
-                        </select>
+                                <label for="localidade">Localidade</label>   
+                                <select class="com-obs" id="localidade" name="localidades">
+                                    <option value="AVE">Aveiro</option>
+                                    <option value="ALM">Almada</option>
+                                    <option value="AMA">Amadora</option>
+                                    <option value="BEN">Benfica</option>
+                                    <option value="BRA">Braga</option>
+                                    <option value="CAS">Cascais</option>
+                                    <option value="COI">Coimbra</option>
+                                    <option value="LEI">Leiria</option>
+                                    <option value="LIS">Lisboa</option>
+                                    <option value="SET">Setúbal</option>
+                                    <option value="SIN">Sintra</option>
+                                    <option value="VIS">Viseu</option>
+                                </select>
+                                <p class="obs-formulario">Escolha o ginásio onde está inscrito.</p>
 
-                        <button id="calcular" class="btn-formulario" name="calcular" type="submit">Calcular</button>
+                                <button class="btn-formulario" type="submit">Marcar consulta!</button>
+    
+                            </form>
+                        </div> <!-- Fim Coluna 2: Formulário -->
+                    </div> <!-- Fim Linha -->
+            </div> <!-- Fim Inscrição Consultas -->
 
-                    </form>
-                </div> <!-- Fim Coluna 2: Formulário -->
-            </div> <!-- Fim Linha -->
-    </div> <!-- Fim Calculadora IMC -->
     </section>
 
     <footer>
@@ -252,7 +311,7 @@
             </div>
             <div class="foottop-caixa news">
                 <div class="newsletter">
-                    <input class="caixa-mail" type="email" name="email" id="email" placeholder="Email" />
+                    <input class="caixa-mail" type="email" name="email" id="email" placeholder="Email" required />
 
                     <input type="button" value="Subscrever" class="subscreve">
 
