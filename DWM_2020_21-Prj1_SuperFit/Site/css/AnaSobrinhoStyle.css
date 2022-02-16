@@ -186,7 +186,6 @@ select {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
     margin: auto;
     left: 0;
     top: 0;
@@ -209,6 +208,64 @@ select {
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
+}
+
+.conteudo-modal h1 {
+    padding: 2rem;
+    color: #111827; 
+    font-size: 1.5rem;
+    line-height: 2rem; 
+    font-weight: 700; 
+    text-align: center; 
+    
+    /*@media (min-width: 640px) { 
+      font-size: 1.875rem;
+    line-height: 2.25rem; 
+     }*/
+}
+
+.caixa-resultado {
+    display: flex; 
+    padding: 1rem; 
+    text-align: center;
+    flex-direction: column; 
+    align-items: center;
+    box-sizing: border-box;
+    width: 50%;
+    margin: auto;
+}
+
+.icon-resultado {
+    display: flex; 
+    margin-bottom: 1.25rem; 
+    background-color: #D1FAE5; 
+    color:  #059669;
+    flex-shrink: 0;
+    padding: 1rem;;
+    justify-content: center; 
+    align-items: center; 
+    width: 4rem; 
+    height: 4rem; 
+    border-radius: 9999px;
+}
+
+.info-resultado {
+    flex-grow: 1;
+}
+
+.info-resultado h2 {
+    margin-bottom: 0.75rem; 
+    color: #111827; 
+    font-size: 1.125rem;
+    line-height: 1.75rem; 
+    font-weight: 500; 
+}
+
+.info-resultado p {
+    font-size: 1rem;
+    line-height: 1.5rem; 
+    line-height: 1.625;
+    text-align: left;
 }
   
 @-webkit-keyframes animatetop {
@@ -964,6 +1021,14 @@ td, th {
     border-radius: 9999px; 
 }
 
+/* IMC */
+
+.seccao-imc {
+    position: relative;
+    margin-top: -5rem;
+    padding-bottom: 5rem;
+}
+
 /***** RESPONSIVIDADE *****/
 
 /* SM (mobile) - 640px ou maior */
@@ -1113,6 +1178,7 @@ td, th {
     /* FORMULÁRIO */
 
     .coluna1-formulario {
+        background-color: #ffffff;
         display: block; 
         width: 55%; 
     }

@@ -1,6 +1,5 @@
 function calcularIMC () {
 
-
     // dados select
     let sexo = document.getElementById("sexo").value;
     let atividade = document.getElementById("atividade").value;
@@ -12,6 +11,23 @@ function calcularIMC () {
 
     // calculo
     let imc, resultado;
+    let icon = document.getElementById("iconResultado");
+
+    // modal
+    let modal = document.getElementById("modal");
+    let exibe = window.getComputedStyle(modal).getPropertyValue('display');
+
+    if (exibe == "none") {
+
+        modal.style.display = "block";
+
+    }
+
+    span.onclick = function () {
+
+        modal.style.display = "none";
+
+    }
 
     imc = peso / (altura * altura / 10000); // fórmula: peso kg / (altura m * altura m)
 
@@ -29,13 +45,16 @@ function calcularIMC () {
 
     switch(resultado) {
         case "magreza": //alert("imc: " + imc + "\nEstá abaixo do peso");
+                        break;
         case "normal": //alert("imc: " + imc + "\nEstá com o peso ideal");
+                        break;
         case "sobrepeso":
             if (atividade == "moderada" || atividade == "intensa") {
                 //alert("imc: " + imc + "\nTem um IMC alto, porém pratica atividade física.");
             } else {
                 //alert("imc: " + imc + "\nTem sobrepeso");
             }
+<<<<<<< Updated upstream
     }
 
     apresentarResultado();
@@ -62,6 +81,9 @@ function apresentarResultado() {
 
         modal.style.display = "none";
 
+=======
+            break;
+>>>>>>> Stashed changes
     }
 
 }
