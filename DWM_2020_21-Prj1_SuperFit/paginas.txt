@@ -36,6 +36,7 @@
 	patrocinadores.html
 	recrutamento.html
 	sobre.html
+	treino.html
 
 Todos:
 	jogo.html
