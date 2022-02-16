@@ -1,10 +1,13 @@
 2211716 Ana Sobrinho
+	AnaSobrinhoCV.html
 	consultas.html
 	equipa.html
 	imc.html
 	precos.html
+	aulas.html
 
 2211695 - André Sousa
+	AndreSousaCV.html
 	franchising.html
 	espacos.html
 	inscrever.html
@@ -12,6 +15,7 @@
 	transformacoes.html
 
 2211726 - Beatriz Gameiro
+
 	app.html
 	beneficiosd.html
 	clubes.html
@@ -19,6 +23,7 @@
 	medidasc.html
 
 2211737 João Barros
+	JoaoBarrosCV.html
 	contactos.html
 	eventos.html
 	index.html
@@ -26,6 +31,7 @@
 	lesoes.html
 
 2211713 - João Duarte
+	joaoduartecv.html
 	modalidades.html
 	patrocinadores.html
 	recrutamento.html
