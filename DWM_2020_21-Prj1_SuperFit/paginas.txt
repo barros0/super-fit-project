@@ -31,7 +31,7 @@
 	lesoes.html
 
 2211713 - João Duarte
-	joaoduartecv.html
+	JoaoDuartecv.html
 	modalidades.html
 	patrocinadores.html
 	recrutamento.html
