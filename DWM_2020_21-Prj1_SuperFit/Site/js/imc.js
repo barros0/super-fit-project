@@ -46,12 +46,15 @@ function apresentarResultado() {
 
     let modal = document.getElementById("modal");
 
-    let wtv = window.getComputedStyle(modal).getPropertyValue('display');
+    let wtv = window.getComputedStyle(modal).getPropertyValue("display");
 
-    if (wtv == "none") {
+    if (wtv === "none") {
 
         modal.style.display = "block";
 
+    } else {
+
+        modal.style.display = "none";
     }
 
     // fechar a caixa de modal ao clicar no x
