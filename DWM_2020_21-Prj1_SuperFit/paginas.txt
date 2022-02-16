@@ -1,4 +1,4 @@
-2211716 Ana Sobrinho
+2211716 - Ana Sobrinho
 	AnaSobrinhoCV.html
 	consultas.html
 	equipa.html
@@ -22,7 +22,7 @@
 	faqs.html
 	medidasc.html
 
-2211737 João Barros
+2211737 - João Barros
 	JoaoBarrosCV.html
 	contactos.html
 	eventos.html
