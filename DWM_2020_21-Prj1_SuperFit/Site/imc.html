@@ -167,7 +167,7 @@
                 <div class="coluna2-formulario">
                     <h3 class="titulo-coluna">Calculadora IMC</h3>
                     
-                    <form method="POST">
+                    <form action="#" method="POST" onsubmit="calcularIMC()">
                         
                         <label for="sexo">Sexo</label>
                         <select id="sexo" name="sexo">
@@ -176,15 +176,15 @@
                         </select>
 
                         <label for="idade">Idade (anos)</label>
-                        <input id="idade" type="number" placeholder="23" min="16" max="110"
+                        <input id="idade" type="number" placeholder="23" required min="16" max="110" pattern="[0-9]{3}"
                         oninvalid="this.setCustomValidity('Introduza uma idade válida, entre 16 e 110 anos.')" oninput="this.setCustomValidity('')">
 
                         <label for="altura">Altura (cm)</label>
-                        <input id="altura" type="number" placeholder="164" min="90" max="220"
+                        <input id="altura" type="number" placeholder="164" required min="90" max="220" pattern="[0-9]{3}"
                         oninvalid="this.setCustomValidity('Introduza uma altura válida, entre 90 a 220cm')" oninput="this.setCustomValidity('')">
 
                         <label for="peso">Peso (kg)</label>
-                        <input id="peso" type="number" step="0.01" placeholder="56" min="40" max="300" maxlength="5"
+                        <input id="peso" type="number" step="0.01" placeholder="56" required min="40" max="300" pattern="[+-]?([0-9]*[.])?[0-9]+"
                         oninvalid="this.setCustomValidity('Introduza um peso válido, entre 40 a 300kg e com no máximo duas casas decimais.')" oninput="this.setCustomValidity('')">
 
                         <label for="atividade">Atividade Física</label>   
@@ -194,39 +194,13 @@
                             <option value="intensa">Intensa</option>
                         </select>
 
-                        <button id="calcular" class="btn-formulario" name="calcular" onclick="calcularIMC()">Calcular</button>
+                        <button id="calcular" class="btn-formulario" name="calcular" type="submit">Calcular</button>
 
                     </form>
                 </div> <!-- Fim Coluna 2: Formulário -->
             </div> <!-- Fim Linha -->
     </div> <!-- Fim Calculadora IMC -->
     </section>
-
-    <!-- Modal -->
-    <div id="modal" class="modal">
-
-        <!-- Conteúdo Modal -->
-        <div class="conteudo-modal">
-            
-            <h1 class="text-center mb-20 sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Resultado</h1>
-
-            <div class="caixa-resultado">
-                <div class="icon-resultado" id="iconResultado">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z" />
-                    </svg>
-                </div>
-                    
-                <div class="info-resultado">
-                    <h2 id="tituloResultado"></h2>
-                    <p id="textoResultado"></p>
-                </div>
-            </div>
-            
-            <button onclick="window.location.href='imc.html'" class="flex mx-auto mt-16 text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">Button</button>
-
-        </div> <!-- FIM Conteúdo Modal -->
-    </div> <!-- FIM Modal -->
 
     <footer>
 
