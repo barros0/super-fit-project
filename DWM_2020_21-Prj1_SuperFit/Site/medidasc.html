@@ -5,55 +5,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Fit-Medidas de Covid-19</title>
+    <title>Super Fit | Medidas de Covid-19</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/27dd9727ef.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../1-Material/Header/css/header.css">
-    <link rel="stylesheet" href="../1-Material/Footer/css/footer.css">
+    <link rel="stylesheet" href="../Site/1-Material/Footer/css/footer.css">
+    <link rel="stylesheet" href="../Site/1-Material/Header/css/header.css">
     <link rel="stylesheet" href="CSS/medidasc.css">
 
 </head>
 
 <body>
 
-        <header>
-            <div class="header-wrap">
-                <div class="logo-container"><img src="img/logo.svg" alt="logo"></div>
-                <div class="menu">
-                    <a href="#home">Home</a>
-                    <a href="#news">Sobre</a>
-                    <a href="#contact">Eventos</a>
-                    <a href="#about">Contactos</a>
+    <header>
+        <div class="header-wrap">
+
+            <div class="logo-container"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
+
+            <div class="menu">
+
+                <a href="#saude">Home</a>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Empresa <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="">Sobre</a>
+                        <a href="">Localização</a>
+                        <a href="">Equipa</a>
+                        <a href="">Recrutamento</a>
+                        <a href="">APP</a>
+                        <a href="">Franchising</a>
+                    </div>
                 </div>
-                <div class="menu-direito">
-                    <div class="login-wrapper">
-                        <a class="login" href="#login">Login</a>
-                        <input type="button" value="Inscreve-te" class="inscreve">
-                    </div>
-                    <div class="menu-hamburguer" onclick="myFunction(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
 
+                <div class="menu-dropdown">
+                    <button class=" dropdown">Saúde <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="">Calcular IMC</a>
+                        <a href="">Consultas de Nutrição</a>
+                        <a href="">Antes/Depois</a>
+                        <a href="">Benefícios do Desporto</a>
+                        <a href="">Lesões</a>
+                    </div>
                 </div>
-                <div class="submenu-wrap" id="submenu">
-                    <div class="submenu-conteudo">
-                        <div class="submenu">
-                            <a href="#home">Home</a>
-                            <a href="#news">Sobre</a>
-                            <a href="#contact">Eventos</a>
-                            <a href="#about">Contactos</a>
-                            <a class="login" href="#login">Login</a>
-                            <input type="button" value="Inscreve-te" class="inscreve">
-                        </div>
 
+                <div class="menu-dropdown">
+                    <button class="dropdown">Preços <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="">Planos</a>
+                        <a href="">Merchandising</a>
+                        <a href="">Parceiros</a>
                     </div>
+                </div>
 
+                <div class="menu-dropdown">
+                    <button class="dropdown">Ajuda <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="">FAQ</a>
+                        <a href="">Contactos</a>
+                        <a href="">Normas COVID-19</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-direito">
+                <div class="login-wrapper">
+                    <a class="login" href="#saude">Login</a>
+                    <a class="inscreve " href="#saude">Inscreve-te</a>
+                </div>
+
+                <div class="menu-hamburguer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
                 </div>
             </div>
-        </header>
+        </div>
+
+        <div class="submenu" id="submenu">
+            <div class="submenumobile">
+                <div class="ins">
+                    <a href="#login">Login</a>
+                    <a href="#login">Inscreve-te</a>
+                </div>
+                <a href="#saude">Home</a>
+            </div>
+            <a href="#dadadwdwa">Jogo da Memória</a>
+            <a href="#saude">Eventos</a>
+            <a href="#saude">Espaços</a>
+            <a href="#saude">Modalidades</a>
+            <a href="#about">Aulas</a>
+            <a href="#login">Treino em Casa</a>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="empresa()">Empresa <i class="fa fa-caret-down"></i></div>
+                <div id="empresadrop" class="conteudo-dropdown-mobile">
+                    <a href="instagram.com">Sobre</a>
+                    <a href="instagram.com">Localização</a>
+                    <a href="instagram.com">Equipa</a>
+                    <a href="instagram.com">Recrutamento</a>
+                    <a href="instagram.com">APP</a>
+                    <a href="instagram.com">Franchising</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="saude()">Saúde <i class="fa fa-caret-down"></i></div>
+                <div id="saudedrop" class="conteudo-dropdown-mobile">
+                    <a href="">Calcular IMC</a>
+                    <a href="">Consultas de Nutrição</a>
+                    <a href="">Antes/Depois</a>
+                    <a href="">Benefícios do Desporto</a>
+                    <a href="">Lesões</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="precos()">Preços <i class="fa fa-caret-down"></i></div>
+                <div id="precosdrop" class="conteudo-dropdown-mobile">
+                    <a href="">Planos</a>
+                    <a href="">Merchandising</a>
+                    <a href="">Parceiros</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="ajuda()">Ajuda <i class="fa fa-caret-down"></i></div>
+                <div id="ajudadrop" class="conteudo-dropdown-mobile">
+                    <a href="">FAQ</a>
+                    <a href="">Contactos</a>
+                    <a href="">Normas COVID-19</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
 
 
 
@@ -64,14 +152,14 @@
         </div>
     </div>
     <div id="titulo">
-    <h2>Medidas Covid-19</h2>
-</div>
+        <h2>Medidas Covid-19</h2>
+    </div>
     <section id="corpo">
 
         <div id="container_items">
 
 
-            <div class="meio">  
+            <div class="meio">
 
 
                 <div class="box_container">
@@ -160,9 +248,9 @@
             </div>
         </div>
     </section>
-<div id="fim">
+    <div id="fim">
 
-</div>
+    </div>
     <footer>
 
         <div class="footer-top">
@@ -196,7 +284,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="foottop-caixa-news">
+            <div class="foottop-caixa news">
                 <div class="newsletter">
                     <input class="caixa-mail" type="email" name="email" id="email" placeholder="Email" required />
 
@@ -226,9 +314,7 @@
         </div>
     </footer>
 
-
-
-    <script src="../1-Material/Header/js/header.js"></script>
+    <script src="../Site/1-Material/Header/js/header.js"></script>
 </body>
 
 </html>
