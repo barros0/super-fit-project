@@ -43,7 +43,7 @@ function acordiao3() {
 }
 
 /*funcao que abre modal box com ajuda */
-function ajuda() {
+function ajudaJogo() {
 
     //buscar a modal box 
     let modal = document.getElementById("ajuda");

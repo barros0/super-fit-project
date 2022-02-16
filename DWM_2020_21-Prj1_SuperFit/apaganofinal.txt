@@ -1,6 +1,6 @@
 rel.doc -
 manualnormas.pdf - incluido
-paginas.txt - ainda nao esta acabado
+paginas.txt - 
 site - 
 ficheiros originais -
 wireframes - incluido
