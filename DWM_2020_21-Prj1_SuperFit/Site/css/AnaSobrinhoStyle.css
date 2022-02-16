@@ -944,13 +944,12 @@ to {top:0; opacity:1}
 
 .seccao-aulas {
     padding-bottom: 2.5rem 1rem;
-    margin: 0 auto;
     overflow-x: auto;
     box-sizing: border-box;
 }
 
 table {
-    min-width: 100%;
+    width: 50%;
     margin: auto;
 }
 

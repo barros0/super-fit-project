@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Aulas</title>
+    <link rel="stylesheet" href="css/AnaSobrinhoStyle.css">
+    <script src="js/aulas.js"></script>
+    <link rel="stylesheet" href="1-Material/Footer/css/footer.css">
+    <link rel="stylesheet" href="1-Material/Header/css/header.css">
+    <script src="https://kit.fontawesome.com/27dd9727ef.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/jpg" href="img/logo.ico" />
+</head>
+<body>
+
+    <header>
+        <div class="header-wrap">
+
+            <div class="logo-container"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></div>
+
+            <div class="menu">
+
+                <a href="index.html">Home</a>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Empresa <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="sobre.html">Sobre</a>
+                        <a href="Clubes.html">Localização</a>
+                        <a href="equipa.html">Equipa</a>
+                        <a href="recrutamento.html">Recrutamento</a>
+                        <a href="app.html">APP</a>
+                        <a href="franchising.html">Franchising</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class=" dropdown">Saúde <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="imc.html">Calcular IMC</a>
+                        <a href="consultas.html">Consultas de Nutrição</a>
+                        <a href="transformacoes.html">Antes/Depois</a>
+                        <a href="beneficiosd.html">Benefícios do Desporto</a>
+                        <a href="lesoes.html">Lesões</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Preços <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="precos.html">Planos</a>
+                        <a href="loja.html">Merchandising</a>
+                        <a href="patrocinadores.html">Parceiros</a>
+                    </div>
+                </div>
+
+                <div class="menu-dropdown">
+                    <button class="dropdown">Ajuda <i class="fa fa-caret-down"></i></button>
+                    <div class="conteudo-dropdown">
+                        <a href="faqs.html">FAQ</a>
+                        <a href="contactos.html">Contactos</a>
+                        <a href="medidasc.html">Normas COVID-19</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="menu-direito">
+                <div class="login-wrapper">
+                    <a class="login" href="login.html">Login</a>
+                    <a class="inscreve " href="inscrever.html">Inscreve-te</a>
+                </div>
+
+                <div class="menu-hamburguer" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="submenu" id="submenu">
+            <div class="submenumobile">
+                <div class="ins">
+                    <a href="login.html">Login</a>
+                    <a href="inscrever.html">Inscreve-te</a>
+                </div>
+                <a href="index.html">Home</a>
+            </div>
+            <a href="jogo.html">Jogo da Memória</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="espacos.html">Espaços</a>
+            <a href="modalidades.html">Modalidades</a>
+            <a href="aulas.html">Aulas</a>
+            <a href="treino.html">Treino em Casa</a>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="empresa()">Empresa <i class="fa fa-caret-down"></i></div>
+                <div id="empresadrop" class="conteudo-dropdown-mobile">
+                    <a href="sobre.html">Sobre</a>
+                    <a href="clubes.html">Localização</a>
+                    <a href="equipa.html">Equipa</a>
+                    <a href="recrutamento.html">Recrutamento</a>
+                    <a href="app.html">APP</a>
+                    <a href="franchising.html">Franchising</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="saude()">Saúde <i class="fa fa-caret-down"></i></div>
+                <div id="saudedrop" class="conteudo-dropdown-mobile">
+                    <a href="imc.html">Calcular IMC</a>
+                    <a href="consultas.html">Consultas de Nutrição</a>
+                    <a href="transformacoes.html">Antes/Depois</a>
+                    <a href="beneficiosd.html">Benefícios do Desporto</a>
+                    <a href="lesoes.html">Lesões</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="precos()">Preços <i class="fa fa-caret-down"></i></div>
+                <div id="precosdrop" class="conteudo-dropdown-mobile">
+                    <a href="precos.html">Planos</a>
+                    <a href="loja.html">Merchandising</a>
+                    <a href="patrocinadores.html">Parceiros</a>
+                </div>
+            </div>
+
+            <div class="menu-dropdown-mobile">
+                <div class="dropdown-mobile" onclick="ajuda()">Ajuda <i class="fa fa-caret-down"></i></div>
+                <div id="ajudadrop" class="conteudo-dropdown-mobile">
+                    <a href="faqs.html">FAQ</a>
+                    <a href="contactos.html">Contactos</a>
+                    <a href="medidasc.html">Normas COVID-19</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="hero">
+
+        <div class="bg-hero hero-bg-aulas">
+          <div class="hero-overlay"></div>
+        </div>
+    
+        <div class="texto-hero">
+            <h1 class="titulo-hero">Mapa de Aulas</h1>
+        </div>
+    
+    </div>
+
+    <section class="seccao-aulas">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="3">Segunda-feira</th>
+                <th colspan="3">Terça-feira</th>
+                <th colspan="3">Quarta-feira</th>
+                <th colspan="3">Quinta-feira</th>
+                <th colspan="3">Sexta-feira</th>
+                <th colspan="3">Sábado</th>
+                <th colspan="3">Domingo</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>07:15</td>
+                    <td>Crossfit</td>
+                    <td>'30</td>
+                    <td>07:15</td>
+                    <td>Spinning</td>
+                    <td>'30</td><td>07:15</td>
+                    <td>Yoga</td>
+                    <td>'30</td><td>07:15</td>
+                    <td>Crossfit</td>
+                    <td>'30</td><td>07:15</td>
+                    <td>Cardio</td>
+                    <td>'30</td><td>07:15</td>
+                    <td>Pilates</td>
+                    <td>'30</td><td>07:15</td>
+                    <td>Spinning</td>
+                    <td>'30</td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td>Boxing</td>
+                    <td>'45</td>
+                    <td>09:00</td>
+                    <td>Zumba</td>
+                    <td>'45</td><td>09:00</td>
+                    <td>Spinning</td>
+                    <td>'45</td><td>09:00</td>
+                    <td>Cardio</td>
+                    <td>'45</td><td>09:00</td>
+                    <td>Crossfit</td>
+                    <td>'45</td><td>09:00</td>
+                    <td>Boxing</td>
+                    <td>'45</td><td>09:00</td>
+                    <td>Zumba</td>
+                    <td>'45</td>
+                </tr>
+                <tr>
+                    <td>12:30</td>
+                    <td>Cardio</td>
+                    <td>'30</td>
+                    <td>12:30</td>
+                    <td>Pilates</td>
+                    <td>'30</td><td>12:30</td>
+                    <td>Crossfit</td>
+                    <td>'30</td><td>12:30</td>
+                    <td>Zumba</td>
+                    <td>'30</td><td>12:30</td>
+                    <td>Pilates</td>
+                    <td>'30</td><td>12:30</td>
+                    <td>Spinning</td>
+                    <td>'30</td><td>12:30</td>
+                    <td>Yoga</td>
+                    <td>'30</td>
+                </tr>
+                <tr>
+                    <td>17:45</td>
+                    <td>Spinning</td>
+                    <td>'60</td>
+                    <td>17:45</td>
+                    <td>Cardio</td>
+                    <td>'60</td>
+                    <td>17:45</td>
+                    <td>Zumba</td>
+                    <td>'60</td>
+                    <td>17:45</td>
+                    <td>Yoga</td>
+                    <td>'60</td>
+                    <td>17:45</td>
+                    <td>Spinning</td>
+                    <td>'60</td>
+                    <td>17:45</td>
+                    <td>Crossfit</td>
+                    <td>'60</td>
+                    <td>17:45</td>
+                    <td>Pilates</td>
+                    <td>'60</td>
+                </tr>
+                <tr>
+                    <td>20:00</td>
+                    <td>Zumba</td>
+                    <td>'45</td>
+                    <td>20:00</td>
+                    <td>Crossfit</td>
+                    <td>'45</td>
+                    <td>20:00</td>
+                    <td>Pilates</td>
+                    <td>'45</td>
+                    <td>20:00</td>
+                    <td>Spinning</td>
+                    <td>'45</td>
+                    <td>20:00</td>
+                    <td>Boxing</td>
+                    <td>'45</td>
+                    <td>20:00</td>
+                    <td>Yoga</td>
+                    <td>'45</td>
+                    <td>20:00</td>
+                    <td>Cardio</td>
+                    <td>'45</td>
+                </tr>
+            </tbody>
+          </table>
+    </section>
+    
+  </div>
+
+  <footer>
+
+    <div class="footer-top">
+        <div class="foottop-caixa">
+            <div class="footer-links">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="Clubes.html">Localização</a></li>
+                    <li><a href="equipa.html">Equipa</a></li>
+                    <li><a href="recrutamento.html">Recrutamento</a></li>
+                    <li><a href="app.html">App</a></li>
+                    <li><a href="franchising.html">Franchising</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foottop-caixa">
+            <div class="footer-links">
+                <h4>Saúde</h4>
+                <ul>
+                    <li><a href="imc.html">Calcular IMC</a></li>
+                    <li><a href="consultas.html">Consultas de Nutrição</a></li>
+                    <li><a href="transformacoes.html">Antes/Depois</a></li>
+                    <li><a href="beneficiosd.html">Benefícios do Desporto</a></li>
+                    <li><a href="lesoes.html">Lesões</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foottop-caixa">
+            <div class="footer-links">
+                <h4>Preços</h4>
+                <ul>
+                    <li><a href="precos.html">Planos</a></li>
+                    <li><a href="loja.html">Merchadising</a></li>
+                    <li><a href="patrocinadores.html">Parceiros</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foottop-caixa">
+            <div class="footer-links">
+                <h4>Ajuda</h4>
+                <ul>
+                    <li><a href="faqs.html">FAQ</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                    <li><a href="medidasc.html">Normas COVID-19</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foottop-caixa news">
+            <div class="newsletter">
+                <input class="caixa-mail" type="email" name="email" id="email" placeholder="Email" required />
+
+                <input type="button" value="Subscrever" class="subscreve">
+
+                <p>Subcreva à nossa newsletter e mantenha-se sempre a par das atualizações!</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-copyright">
+            <p>Copyright SuperFit &copy; 2021. Todos os Direitos Reservados</p>
+
+        </div>
+
+        <div class="footer-redes">
+
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/"><i class="fa fa-github"></i></a>
+
+        </div>
+
+    </div>
+</footer>
+    
+</body>
+</html>
