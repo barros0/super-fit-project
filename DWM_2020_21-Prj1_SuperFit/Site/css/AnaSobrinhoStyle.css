@@ -651,8 +651,7 @@ to {top:0; opacity:1}
 .cv-footer {
     color: #4B5563;
     width: 100%; 
-    display: flex; 
-    padding-left: 2rem 1.25rem;
+    display: flex;
     flex-direction: column; 
     align-items: center;
     text-align: center;
@@ -943,7 +942,7 @@ to {top:0; opacity:1}
 /* AULAS */
 
 .seccao-aulas {
-    padding-bottom: 2.5rem 1rem;
+    padding: 2.5rem 1rem;
     overflow-x: auto;
     box-sizing: border-box;
 }
@@ -1081,7 +1080,6 @@ td, th {
         padding: 5px;
         color: #EC4899;
         border-bottom: 3px solid #Ec4899;
-        transition: 0.5;
     }
 
     /* CV */
