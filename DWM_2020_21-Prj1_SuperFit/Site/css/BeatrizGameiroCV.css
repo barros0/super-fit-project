@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    background-attachment: fixed;
+    height: 100%;
+    min-height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    line-height: 1.8em;
+    color:#3d3d50;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #3d3d50;
+}
+p{
+    opacity: .9;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+section{
+    padding: clamp(1rem,2vw,2rem);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ebebeb;
+}
+.sobremim_text p{
+    text-align: justify;
+}
+.sec_titulo{
+    font-size: 1.15rem;
+
+    color: #9c9c9c;
+}
+[class*="_item"] {
+    margin-top: 1.5rem;
+  }
+  /*grid*/
+.container {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 1rem;
+    margin: 60px auto;
+}
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+
+/*sidebar*/
+.sidebar{
+    position: relative;
+}
+
+.profile{
+    position: sticky !important;
+    top: 0;
+    height: calc(100vh - 10px);
+    padding: 0 2rem;
+    overflow-y: auto;
+}
+.profile::-webkit-scrollbar{
+    width: 6px;
+}
+.profile_header{
+    margin: 1rem 0;
+}
+.profile_links{
+    display: flex;
+
+}
+.profile_links a{
+    text-decoration: none;
+    height: 35px;
+    width: 35px;
+    margin-right: 1rem;
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #bebece;
+    border-radius: 2px;
+}
+.profile_links a:hover{
+    transition: all .3s ease-out;
+    color: #31fa9f;
+}
+/*SKILLS*/
+.progreco_item h4 {
+    font-weight: normal;
+  }
+  .progreco_barra {
+    position: relative;
+    border-radius: 4px;
+    height: 4px;
+  }
+  .progreco {
+    position: absolute;
+    height: 100%;
+    background: #FF777C;
+    z-index: 0;
+    border-radius: 4px;
+    text-align: right;
+    animation: fromZero ease-in-out 1s;/*animacão das barras das skills*/
+  }
+  @keyframes fromZero {
+    from {
+        width: 0;/*de 0*/
+    }
+  }
+  .proceco_tooltip {
+    position: absolute;
+    top: -30px;
+    padding: 0 .26rem;
+    font-size: 12px;
+    background:#333;
+    border-radius: 3px;
+    color: #ebebeb;
+  }
+  .proceco_tooltip::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    border-top: 6px solid #333;
+    border-right: 8px solid transparent;
+  }
+  /*Contact Form Section*/
+input,textarea{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #FF777C;
+    outline: 0;
+  }
+  ::placeholder {
+    font-family: Montserrat;
+  }
+  button {
+    background: #FF777C;
+    border-radius: 10px;
+    border: none;
+    padding: 13px 35px;
+    color: white;
+    margin-top: 1rem;
+    transition: all .3s ease-out;/*transição ao fazer hover*/
+  }
+  button:hover {
+    opacity: .8;
+  }
+  
+ 
+  
+  /* Responsive */
+  @media (min-width:768px) {
+    .main.grid {
+        grid-template-columns: 1fr 2fr;
+    }
+    .col_2 {
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+
