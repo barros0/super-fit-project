@@ -1,0 +1,39 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: Superfit Logo.ai
+Color Mode: CMYK color
+Color Profile: Coated FOGRA39 (ISO 12647-2:2004)
+Ruler Units: points
+Artboard Dimensions: 209,3736 pt x 146,044 pt
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+NONE
