@@ -210,11 +210,10 @@ select {
 .navbar {
     width: 100%; 
     display: flex;
-    color: #4B5563; 
-    display: flex; 
+    color: #4B5563;
     flex-direction: column; 
     flex-wrap: wrap; 
-    align-items: center; 
+    align-items: center;
 }
 
 .logo {
@@ -965,6 +964,18 @@ td, th {
 
     .logo span {
         padding: 1rem;
+    }
+
+    .links-nav {
+        padding: 5px;
+        border: 3px solid #ffffff;
+    }
+
+    .links-nav a:hover {
+        padding: 5px;
+        color: #EC4899;
+        border-bottom: 3px solid #Ec4899;
+        transition: 0.5;
     }
 
     /* CV */
