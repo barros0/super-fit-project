@@ -1,15 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-*,
-*::before,
-*::after{
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    min-height:100vh;
+    width:100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-color: rgb(216,216,216);
+    }
+  
+*{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing:  border-box;
-}
-html{
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*-----------------------------------IMG--------------------------------*/
@@ -42,14 +54,16 @@ html{
   @media screen and (max-width: 600px) {
     .conteudo h1 {
       font-size: 40px;
+      text-align: center;
+      justify-content: center;
     }
     .main-image{
       height: 300px
     }
     .conteudo{
-      top: 37%;
+      top: 28%;
     }
-
+  
   }
 /*-----------------------------------IMG--------------------------------*/
 .container{

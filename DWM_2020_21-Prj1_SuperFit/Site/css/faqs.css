@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 *,
 *::before,
 *::after {
@@ -7,7 +9,7 @@
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 10px;
   box-sizing: border-box;
 }
@@ -41,15 +43,18 @@ html {
   justify-content: center;
 }
 @media screen and (max-width: 600px) {
-  .cont h1 {
+  .conteudo h1 {
     font-size: 40px;
+    text-align: center;
+    justify-content: center;
   }
   .main-image{
     height: 300px
   }
-  .cont{
-    top: 37%;
+  .conteudo{
+    top: 28%;
   }
+
 }
 
 
