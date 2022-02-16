@@ -31,12 +31,14 @@ body {
     linear-gradient(to bottom, rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
     url("../img/clubes/ginasio.png");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     height: 500px;
     overflow: hidden;
     width: 100%;
   }
   .conteudo{
-    position: absolute;
+    position: relative;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50% );
@@ -59,11 +61,7 @@ body {
     }
     .main-image{
       height: 300px
-    }
-    .conteudo{
-      top: 28%;
-    }
-  
+    }  
   }
 /*-----------------------------------IMG--------------------------------*/
 .container{

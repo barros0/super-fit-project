@@ -1,19 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-*,
-*::before,
-*::after {
+
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    min-height:100vh;
+    width:100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-color: rgb(216,216,216);
+    }
+  
+*{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
-
-html {
   font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  box-sizing: border-box;
 }
-
 
 /*-----------------------------------IMG--------------------------------*/
 .main-image{
@@ -22,12 +31,14 @@ html {
   linear-gradient(to bottom, rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)),
   url("../img/faqs/gym.png");
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   height: 500px;
   overflow: hidden;
   width: 100%;
 }
 .cont{
-  position: absolute;
+  position: relative;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50% );
@@ -41,9 +52,10 @@ html {
   font-size: 70px;
   text-align: center;
   justify-content: center;
+
 }
 @media screen and (max-width: 600px) {
-  .conteudo h1 {
+  .cont h1 {
     font-size: 40px;
     text-align: center;
     justify-content: center;
@@ -51,93 +63,68 @@ html {
   .main-image{
     height: 300px
   }
-  .conteudo{
-    top: 28%;
-  }
 
 }
 
 
 /*-----------------------------------IMG--------------------------------*/
-/*-----------------------------------Section para centralizar--------------------------------*/
+/*-----------------------------------Section do accordion--------------------------------*/
 section {
   width: 100%;
   height: 100%;
-  background-color: #363636;
+  background-color:  rgb(216,216,216);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.cont_area {
-  width: 100%;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 70px 15px;
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 32px auto;
 }
-
-.accordion_item {
-  background-color: #272727;
-  border-radius: .4rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 16px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  border: 1px #747474 solid;
+  
 }
-
-.accordion_link {
-  font-size: 1.6rem;
-  color: rgba(255, 255, 255, .8);
-  text-decoration: none;
-  background-color: #272727;
-  width: 100%;
+.accordion-item-header {
+  padding: 8px 48px 8px 16px;
+  min-height: 56px;
+  line-height: 20px;
+  font-weight: bold;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
+  position: relative;
+  cursor: pointer;
 }
-
-.accordion_link i {
-  color: #e7d5ff;
-  padding: .5rem;
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 32px;
+  position: absolute;
+  right: 16px;
 }
-
-.accordion_link .ion-md-remove {
-  display: none;
+.accordion-item-header.active::after {
+  content: "\2212";
 }
-
-.answer {
+.accordion-item-body {
   max-height: 0;
   overflow: hidden;
-  position: relative;
-  background-color: rgb(25, 26, 29);
-  transition: max-height 650ms;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 16px;
+  line-height: 24px;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
 
-.answer::before {
-  content: "";
-  position: absolute;
-  width: .6rem;
-  height: 90%;
-  background-color: #C20D22;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-
-.answer p {
-  color: rgba(255, 255, 255, .6);
-  font-size: 1.4rem;
-  padding: 2rem;
-}
-
-.accordion_item:target .answer {
-  max-height: 20rem;
-}
-
-.accordion_item:target .accordion_link .ion-md-add {
-  display: none;
-}
-
-.accordion_item:target .accordion_link .ion-md-remove {
-  display: block;
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
 }
