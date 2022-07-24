@@ -2,8 +2,10 @@
 ## SuperFit is gym chain website
 First year, 1st semester long project
 
-###Grade
+### Grade:
 18.85/20
 
-###Tech used:
+### Tech used:
   -HTML + CSS + JS
+
+What I learned:
