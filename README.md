@@ -3,5 +3,7 @@
 First year, 1st semester long project
 
 • Created fully-responsive website for a gym chain with a team of 5 developers
+
 • Designed the overall website concept, layout
+
 • Used: HTML, CSS, JS
